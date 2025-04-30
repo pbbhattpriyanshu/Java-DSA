@@ -1,6 +1,6 @@
 // Lecture 2 - Input/Output in java
 
-import java.util.*;
+// import java.util.*;
 
 public class TakingOutput {
     public static void main(String[] args) {
