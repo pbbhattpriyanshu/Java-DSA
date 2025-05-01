@@ -72,6 +72,6 @@ public class ConditionalSt {
         // else {
         //     System.out.println("Your Tax is : " + per30);
         // }
-        // System.out.println("Thank you, Please visit again"); 
+        // System.out.println("Thank you, Please visit again");  
     }
 }
