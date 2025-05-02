@@ -50,5 +50,13 @@ public class loops {
         //     n = n / 10;
         // }
         // System.out.println(rev );
+
+        // do-while loop
+        // int counter = 1;
+        // do {
+        //     System.out.println("My name is piyush");
+        //     counter++;
+        // } while (counter < 4);
+
     }
 }
