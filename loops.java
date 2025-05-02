@@ -58,5 +58,31 @@ public class loops {
         //     counter++;
         // } while (counter < 4);
 
+        // Break Statement
+        // To exit the loop
+        // Print 1 to 5 numbers but exit form 3 number
+
+        //   for(int i=1; i<=5; i++){
+        //     if (i == 3) {
+        //         break;
+        //     }
+        //     System.out.println(i);
+        //   }
+        //   System.out.println("I am out of the loop");
+
+        // keep entering number till user enters a multiple of 10
+
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("Enter your number : ");
+            int num = sc.nextInt();
+            if (num % 10 == 0) {
+                System.out.println("The number is multiple of 10");
+                break;
+            }
+            System.out.println(num);
+        } while(true);
+        sc.close();
+
     }
 }
