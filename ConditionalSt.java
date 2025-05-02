@@ -73,5 +73,51 @@ public class ConditionalSt {
         //     System.out.println("Your Tax is : " + per30);
         // }
         // System.out.println("Thank you, Please visit again");  
+
+        // Switch Statement 
+        // int number = 6;
+        // switch (number) {
+        //     case 1:
+        //         System.out.println("Samaso");
+        //         break;
+        //     case 2: 
+        //         System.out.println("Burgur");
+        //         break;
+        //     case 3:
+        //         System.out.println("Mango shake");
+        //     default:
+        //         System.out.println("We are dreaming");
+        // }
+
+        // Simple Calculator
+        // +, -, *, /, %
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Number 1");
+        int num1 = sc.nextInt();
+        System.out.println("Enter Number 2");
+        int num2 = sc.nextInt();
+        System.out.println("Enter operators ( +, -, *, /, %)");
+        char operators = sc.next().charAt(0);
+
+        switch (operators) {
+            case '+':
+                System.out.println(num1 + num2);
+                break;
+            case '-':
+                System.out.println(num1 - num2);
+                break;
+            case '*':
+                System.out.println(num1 * num2);
+                break;
+            case '/':
+                System.out.println(num1 / num2);
+                break;
+            case '%':
+                System.out.println(num1 % num2);
+                break;
+            default:
+                System.out.println("Wrong Operators");
+        }
     }
 }
