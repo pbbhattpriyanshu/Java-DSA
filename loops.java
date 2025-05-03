@@ -87,6 +87,37 @@ public class loops {
         // Practice question 
 
         // Generate an n x n matrix filled with prime numbers in a spiral order, starting from the top-left corner.
+                int n = 5;
+                int[][] matrix = new int[n][n];
+                int num = 2, top = 0, bottom = n - 1, left = 0, right = n - 1;
+        
+                while (top <= bottom && left <= right) {
+                    for (int i = left; i <= right; i++) matrix[top][i] = nextPrime(num++);
+                    top++;
+                    for (int i = top; i <= bottom; i++) matrix[i][right] = nextPrime(num++);
+                    right--;
+                    for (int i = right; i >= left; i--) matrix[bottom][i] = nextPrime(num++);
+                    bottom--;
+                    for (int i = bottom; i >= top; i--) matrix[i][left] = nextPrime(num++);
+                    left++;
+                }
+        
+                for (int[] row : matrix) {
+                    for (int val : row) System.out.print(val + "\t");
+                    System.out.println();
+                }
+            }
+        
+            static int nextPrime(int start) {
+                while (!isPrime(start)) start++;
+                return start;
+            }
+        
+            static boolean isPrime(int n) {
+                if (n < 2) return false;
+                for (int i = 2; i <= Math.sqrt(n); i++)
+                    if (n % i == 0) return false;
+                return true;
 
         // Continue Statement
         // to skip an iteration
