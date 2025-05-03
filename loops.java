@@ -72,17 +72,24 @@ public class loops {
 
         // keep entering number till user enters a multiple of 10
 
-        Scanner sc = new Scanner(System.in);
-        do {
-            System.out.println("Enter your number : ");
-            int num = sc.nextInt();
-            if (num % 10 == 0) {
-                System.out.println("The number is multiple of 10");
-                break;
-            }
-            System.out.println(num);
-        } while(true);
-        sc.close();
+        // Scanner sc = new Scanner(System.in);
+        // do {
+        //     System.out.println("Enter your number : ");
+        //     int num = sc.nextInt();
+        //     if (num % 10 == 0) {
+        //         System.out.println("The number is multiple of 10");
+        //         break;
+        //     }
+        //     System.out.println(num);
+        // } while(true);
+        // sc.close();
+
+        // Practice question 
+
+        // Generate an n x n matrix filled with prime numbers in a spiral order, starting from the top-left corner.
+
+        // Continue Statement
+        // to skip an iteration
 
     }
 }
