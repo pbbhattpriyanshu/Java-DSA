@@ -124,22 +124,31 @@ public class loops {
 
         // Given a number n, generate the sequence n = n + reverse(n) until a number
         // repeats. Detect when a cycle occurs and count steps.
-        int n = 89;
-        Set<Integer> seen = new HashSet<>();
-        int steps = 0;
+        // int n = 89;
+        // Set<Integer> seen = new HashSet<>();
+        // int steps = 0;
 
-        while (!seen.contains(n)) {
-            seen.add(n);
-            int rev = Integer.parseInt(new StringBuilder(String.valueOf(n)).reverse().toString());
-            n = n + rev;
-            steps++;
-        }
+        // while (!seen.contains(n)) {
+        //     seen.add(n);
+        //     int rev = Integer.parseInt(new StringBuilder(String.valueOf(n)).reverse().toString());
+        //     n = n + rev;
+        //     steps++;
+        // }
 
-        System.out.println("Cycle detected at: " + n);
-        System.out.println("Steps: " + steps);
+        // System.out.println("Cycle detected at: " + n);
+        // System.out.println("Steps: " + steps);
 
         // Continue Statement
         // to skip an iteration
+
+        //  for(int i=1; i<=5; i++){
+        //     if (i == 3) {
+        //         continue;
+        //     }
+        //     System.out.println(i);
+        //  }
+        
+        // Display 
 
     }
 }
