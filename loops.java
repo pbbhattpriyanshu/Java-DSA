@@ -148,7 +148,8 @@ public class loops {
         //     System.out.println(i);
         //  }
         
-        // Display 
+        // Display all numbers entered by user except multiples of 10
 
+        
     }
 }
