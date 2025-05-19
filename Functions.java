@@ -137,8 +137,6 @@ public class Functions {
     // Call by value --> copy of value
     // Call by reference --> original value
 
-    // primeInRange(10);
-    decToBin(5);
     } 
 }
 
