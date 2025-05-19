@@ -66,7 +66,7 @@ public class Functions {
     // public static boolean isPrime(int num) {
     //    boolean isPrime = true;
     //    for(int i = 2; i<= num-1; i++){
-    //     if (num % i == 0) {
+    //     if (num % i == 0) { //completely dividing
     //         isPrime = false;
     //         break;
     //     }
@@ -83,6 +83,22 @@ public class Functions {
     //     }
     //     System.out.println();
     // }
+
+    //Convert from binary to decimal
+    public static void binToDec(int binNum) {
+        int myNum = binNum;
+        int pow = 0;
+        int decNum = 0;
+
+        while (binNum > 0) {
+            int lastDigit = binNum % 10;
+            decNum = decNum + (lastDigit * (int)Math.pow(2, pow));
+
+            pow++;
+            binNum = binNum/10;
+        }
+        System.out.println("decimal of " + myNum +" = " + decNum);
+    }
     public static void main(String[] args) {
         // Scanner sc = new Scanner(System.in);
         // int a = sc.nextInt();
@@ -105,17 +121,8 @@ public class Functions {
     // Call by value --> copy of value
     // Call by reference --> original value
 
-    // int multiply = product(12,2);
-    // System.out.println("main class " + multiply);
-
-    // System.out.println(bincoffi(5, 2));
-    // System.out.println(bincoffi(10, 2));
-
-    // System.out.println(sum(23, 43));
-    // System.out.println(sum(21, 32, 1));
-    // System.out.println(sum(3.3f, 4.3f));
-    // System.out.println(isPrime(4));
     // primeInRange(10);
+    binToDec(101);
     } 
 }
 
