@@ -46,18 +46,31 @@ public class Pattern02 {
 // }
 
 // Half-pyramid with numbers
-public static void numpyramid(int num){
+// public static void numpyramid(int num){
+//     //outer loop
+//     for(int i=1; i<=num; i++){
+//         //inner loop
+//         for(int j=1; j<=i;j++){
+//             System.out.print("*");
+//         }
+//         System.out.println();
+//     }
+// }
+
+// Floyd's Triangle
+public static void floyd(int rows){
+    int num = 1;
     //outer loop
-    for(int i=1; i<=num; i++){
+    for(int i=1; i<=rows; i++){
         //inner loop
-        for(int j=1; j<=i;j++){
-            System.out.print("*");
+        for(int j=1; j<=i; j++){
+            System.out.print(num+" ");
+            num++;
         }
         System.out.println();
     }
 }
     public static void main(String[] args) {
-        
-        numpyramid(5);
+        floyd(5);
     }
 }
