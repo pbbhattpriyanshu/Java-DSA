@@ -1,0 +1,82 @@
+import java.util.*;
+public class Arrays {
+
+    //Update array 
+    // public static void update(int marks[]){
+    //     for(int i=0; i<marks.length; i++){
+    //         marks[i] = marks[i] + 5;
+    //     }
+    // }
+
+    // Linear Search 
+    // public static int linearSearch(int numbers[], int key){
+    //     for(int i=0; i<numbers.length; i++){
+    //         if (numbers[i] == key) {
+    //             return i;
+    //         }
+    //     }
+    //     return -1;
+    // }
+
+    //Largest Numbers
+    public static int getLargest(int numbers[]){
+        int largest = Integer.MIN_VALUE; // -infinity
+        int smallest = Integer.MAX_VALUE; // +infinity
+
+        for(int i=0; i<numbers.length; i++){
+            if (largest < numbers[i]) {
+                largest = numbers[i];
+            }
+            if (smallest > numbers[i]) {
+                smallest = numbers[i];
+            }
+        }
+        System.out.println("smallest vaue is : " + smallest);
+        return largest;
+    }
+    public static void main(String[] args) {
+        // //Creating an Array
+        // int marks[] = new int [5];
+        // //Taking Input   
+        // Scanner sc = new Scanner(System.in);
+
+        // marks[0] = sc.nextInt();
+        // marks[1] = sc.nextInt();
+        // marks[2] = sc.nextInt();
+
+        // System.out.println("phy : " + marks[0]);
+        // System.out.println("chem : " + marks[1]);
+        // System.out.println("math : " + marks[2]);
+
+        // int percentage = (marks[0] + marks[1] + marks[2]) / 3;
+
+        // System.out.println("percentage : " + percentage + "%");
+        
+        // //Print Length of array
+        // System.out.println("length of array : " + marks.length);
+
+        //Passing arrays as arguments
+        // Array only by reference
+
+        // int marks[] = {56,76,33};
+        // update(marks);
+
+        //print our marks
+        // for(int i=0; i<marks.length; i++){
+        //     System.out.print(marks[i] + " ");
+        // }
+        // System.out.println();
+
+        //Linear Search
+        int numbers[] = {2,4,6,7,3,10,11,9,8,1,13,12};
+        // int key = 10;
+
+        // int index = linearSearch(numbers, key);
+        // if (index == -1) {
+        //     System.out.println("Not found");
+        // } else {
+        //     System.out.println("Key is at index : " + index);
+        // }
+        System.out.println("largest value is : " + getLargest(numbers));
+    }
+}

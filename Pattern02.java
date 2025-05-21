@@ -74,6 +74,6 @@ public class Pattern02 {
 // 0-1 Triangle
 
     public static void main(String[] args) {
-        floyd(5);
+        
     }
 }
