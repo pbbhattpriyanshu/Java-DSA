@@ -46,25 +46,55 @@ public class Arrays {
     // }
 
     //Binary search -- sorted arrays
-    public static int binarySearch(int numbers[], int key) {
-        int start = 0, end = numbers.length-1;
+    // public static int binarySearch(int numbers[], int key) {
+    //     int start = 0, end = numbers.length-1;
 
-        //loop
-        while (start <= end) {
-            int mid = (start + end)/2;
+    //     //loop
+    //     while (start <= end) {
+    //         int mid = (start + end)/2;
 
-            //Comparison 
-            if (numbers[mid] == key) { // found
-                return mid;
+    //         //Comparison 
+    //         if (numbers[mid] == key) { // found
+    //             return mid;
+    //         }
+    //         if (numbers[mid] < key) { // right
+    //             start = mid+1;
+    //         } else { // left
+    //             end = mid-1;
+    //         }
+    //     }
+    //     return -1;
+    // }
+
+    //Reverse array
+    // public static void reverse(int numbers[]) {
+    //     int first = 0, last = numbers.length-1;
+
+    //     //loop
+    //     while (first < last) {
+    //         //swap
+    //         int temp = numbers[last];
+    //         numbers[last] = numbers[first];
+    //         numbers[first] = temp;
+
+    //         first++;
+    //         last--;
+    //     }
+    // }
+
+    //Print pairs
+    public static void printPairs(int numbers[]) {
+        int tp = 0;
+        for(int i=0; i<numbers.length; i++){
+            int curr = numbers[i]; //1,2,3,4,5,6,7
+            System.out.println(curr);
+            for(int j=i; j<numbers.length; j++){
+                System.out.print("(" + curr + "," + numbers[j] + ")");
+                tp++;
             }
-            if (numbers[mid] < key) { // right
-                start = mid+1;
-            } else { // left
-                end = mid-1;
-            }
+            System.out.println();
         }
-        return -1;
-
+        System.out.println("Total pairs " + tp);
     }
     public static void main(String[] args) {
         // //Creating an Array
@@ -119,13 +149,33 @@ public class Arrays {
         // System.out.println("largest value is : " + getLargest(numbers));
 
         //Sorted arrays
-        int numbers[] = {2,4,6,8,10,12,14,16,18,20};
-        int key = 16;
-        int index = binarySearch (numbers, key);
-        if (index == -1) {
-            System.out.println("Not found");
-        } else {
-            System.out.println("Index for key is : " + index);
-        }
+    //     int numbers[] = {2,4,6,8,10,12,14,16,18,20};
+    //     int key = 16;
+    //     int index = binarySearch (numbers, key);
+    //     if (index == -1) {
+    //         System.out.println("Not found");
+    //     } else {
+    //         System.out.println("Index for key is : " + index);
+    //     }
+
+    //Reverse an Array
+    //  int numbers[] = {2,4,6,8,10,12,14};
+    //  System.out.println("Before Reverse");
+    //  for(int i=0; i<numbers.length; i++){
+    //     System.out.print(numbers[i]+" ");
+    //  }
+    //  System.out.println();
+
+    //  reverse(numbers);
+    //  System.out.println("After Reverse");
+    //  for(int i=0; i<numbers.length; i++) {
+    //     System.out.print(numbers[i]+" ");
+    //  }
+    //  System.out.println();
+
+    //Pairs in Arrays
+    int numbers[] = {1,2,3,4,5};
+    printPairs(numbers);
+
     }
 }
