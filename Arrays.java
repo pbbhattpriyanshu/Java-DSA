@@ -18,6 +18,16 @@ public class Arrays {
     //     return -1;
     // }
 
+    //linear search -- menu
+    public static String linearSearch(String menu[], String order) {
+        for(int i=0; i<menu.length; i++){
+            if (menu[i] == order) {
+                return "Your order is ready";
+            }
+        }
+        return "Your order is not available";
+    }
+
     //Largest Numbers
     public static int getLargest(int numbers[]){
         int largest = Integer.MIN_VALUE; // -infinity
@@ -77,6 +87,14 @@ public class Arrays {
         // } else {
         //     System.out.println("Key is at index : " + index);
         // }
+
+        //linear search - menu 
+        String menu[] = {"dosa","idli","vada","upma","poha","puri","paratha","biryani","dal","paneer","chole bhature"};
+        String order = "mango";
+
+        System.out.println(linearSearch(menu, order));
+
+
         System.out.println("largest value is : " + getLargest(numbers));
     }
 }
