@@ -19,30 +19,52 @@ public class Arrays {
     // }
 
     //linear search -- menu
-    public static String linearSearch(String menu[], String order) {
-        for(int i=0; i<menu.length; i++){
-            if (menu[i] == order) {
-                return "Your order is ready";
-            }
-        }
-        return "Your order is not available";
-    }
+    // public static String linearSearch(String menu[], String order) {
+    //     for(int i=0; i<menu.length; i++){
+    //         if (menu[i] == order) {
+    //             return "Your order is ready";
+    //         }
+    //     }
+    //     return "Your order is not available";
+    // }
 
     //Largest Numbers
-    public static int getLargest(int numbers[]){
-        int largest = Integer.MIN_VALUE; // -infinity
-        int smallest = Integer.MAX_VALUE; // +infinity
+    // public static int getLargest(int numbers[]){
+    //     int largest = Integer.MIN_VALUE; // -infinity
+    //     int smallest = Integer.MAX_VALUE; // +infinity
 
-        for(int i=0; i<numbers.length; i++){
-            if (largest < numbers[i]) {
-                largest = numbers[i];
+    //     for(int i=0; i<numbers.length; i++){
+    //         if (largest < numbers[i]) {
+    //             largest = numbers[i];
+    //         }
+    //         if (smallest > numbers[i]) {
+    //             smallest = numbers[i];
+    //         }
+    //     }
+    //     System.out.println("smallest vaue is : " + smallest);
+    //     return largest;
+    // }
+
+    //Binary search -- sorted arrays
+    public static int binarySearch(int numbers[], int key) {
+        int start = 0, end = numbers.length-1;
+
+        //loop
+        while (start <= end) {
+            int mid = (start + end)/2;
+
+            //Comparison 
+            if (numbers[mid] == key) { // found
+                return mid;
             }
-            if (smallest > numbers[i]) {
-                smallest = numbers[i];
+            if (numbers[mid] < key) { // right
+                start = mid+1;
+            } else { // left
+                end = mid-1;
             }
         }
-        System.out.println("smallest vaue is : " + smallest);
-        return largest;
+        return -1;
+
     }
     public static void main(String[] args) {
         // //Creating an Array
@@ -78,7 +100,7 @@ public class Arrays {
         // System.out.println();
 
         //Linear Search
-        int numbers[] = {2,4,6,7,3,10,11,9,8,1,13,12};
+        // int numbers[] = {2,4,6,7,3,10,11,9,8,1,13,12};
         // int key = 10;
 
         // int index = linearSearch(numbers, key);
@@ -89,12 +111,21 @@ public class Arrays {
         // }
 
         //linear search - menu 
-        String menu[] = {"dosa","idli","vada","upma","poha","puri","paratha","biryani","dal","paneer","chole bhature"};
-        String order = "mango";
+        // String menu[] = {"dosa","idli","vada","upma","poha","puri","paratha","biryani","dal","paneer","chole bhature"};
+        // String order = "mango";
 
-        System.out.println(linearSearch(menu, order));
+        // System.out.println(linearSearch(menu, order));
 
+        // System.out.println("largest value is : " + getLargest(numbers));
 
-        System.out.println("largest value is : " + getLargest(numbers));
+        //Sorted arrays
+        int numbers[] = {2,4,6,8,10,12,14,16,18,20};
+        int key = 16;
+        int index = binarySearch (numbers, key);
+        if (index == -1) {
+            System.out.println("Not found");
+        } else {
+            System.out.println("Index for key is : " + index);
+        }
     }
 }
