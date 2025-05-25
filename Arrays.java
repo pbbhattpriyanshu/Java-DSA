@@ -83,18 +83,36 @@ public class Arrays {
     // }
 
     //Print pairs
-    public static void printPairs(int numbers[]) {
-        int tp = 0;
+    // public static void printPairs(int numbers[]) {
+    //     int tp = 0;
+    //     for(int i=0; i<numbers.length; i++){
+    //         int curr = numbers[i]; //1,2,3,4,5,6,7
+    //         System.out.println(curr);
+    //         for(int j=i; j<numbers.length; j++){
+    //             System.out.print("(" + curr + "," + numbers[j] + ")");
+    //             tp++;
+    //         }
+    //         System.out.println();
+    //     }
+    //     System.out.println("Total pairs " + tp);
+    // }
+
+    //Print Subarrays
+    public static void printSubarrays(int numbers[]) {
+        int ts = 0; //total subarrays
         for(int i=0; i<numbers.length; i++){
-            int curr = numbers[i]; //1,2,3,4,5,6,7
-            System.out.println(curr);
+            int start = i;
             for(int j=i; j<numbers.length; j++){
-                System.out.print("(" + curr + "," + numbers[j] + ")");
-                tp++;
+                int end = j;
+                for(int k=start; k<=end; k++) {
+                    System.out.print(numbers[k] +" ");
+                }
+                ts++;
+                System.out.println();
             }
             System.out.println();
         }
-        System.out.println("Total pairs " + tp);
+        System.out.println("Total subarrays " + ts);
     }
     public static void main(String[] args) {
         // //Creating an Array
@@ -174,8 +192,12 @@ public class Arrays {
     //  System.out.println();
 
     //Pairs in Arrays
-    int numbers[] = {1,2,3,4,5};
-    printPairs(numbers);
+    // int numbers[] = {1,2,3,4,5};
+    // printPairs(numbers);
 
+    //Print Subarrays
+    // a continuous part of array
+    int numbers[] = {2,4,6,8,10};
+    printSubarrays(numbers);
     }
 }

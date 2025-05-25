@@ -1,4 +1,4 @@
-// Lecture 9 - Pattern in java
+ // Lecture 9 - Pattern in java
 public class Pattern01 {
     public static void main(String[] args) {
         // Print the Pattern
