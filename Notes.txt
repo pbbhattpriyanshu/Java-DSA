@@ -7,4 +7,10 @@
  ; -> Terminator, which is must to end the statement
  -> This is comment, which is not be included as code.
 
-//
+// Variable (Container)
+
+Primitive = simple value stored directly in memory (stack).
+for example - int, double, float, char, boolean.
+Referance = memory address (stack) that points to the (heap).
+for example - String, array, Object.
+
