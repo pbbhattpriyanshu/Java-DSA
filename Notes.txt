@@ -14,3 +14,5 @@ for example - int, double, float, char, boolean.
 Referance = memory address (stack) that points to the (heap).
 for example - String, array, Object.
 
+// Order of Operations
+[P-E-M-D-A-S] (priority, exponents, multiplication, divide, add, sub)
