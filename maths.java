@@ -27,5 +27,12 @@ public class maths {
         System.out.println("The Hypotenuse (side c) is " + result + " cm");
 
         sc.close();
+
+        // Printf() -- >   method in Java is used to print formatted output to the console. and use \n for next line
+        
+        // String name = "Piyush";
+        // int age = 21;
+        // String greet = "Nice to meet u";
+        // System.out.printf("Hi, I am %s and I am %d years old, and %s.", name, age, greet);
     }
 }
