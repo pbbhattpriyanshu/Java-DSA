@@ -18,8 +18,15 @@
  [P-E-M-D-A-S] (priority, exponents, multiplication, divide, add, sub)
 
 // printf() = is a method used to format output / series wise
+ Format specifiers examples:
+
+ %d for integers
+ %f for floating-point numbers
+ %s for strings
  example:
  
  int age = 25;
  System.out.printf("I am %d years old.", age);
  Output: I am 25 years old.
+
+ printf() is useful for creating well-formatted and readable output.
