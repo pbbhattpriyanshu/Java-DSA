@@ -9,10 +9,10 @@
 
 // Variable (Container)
 
-Primitive = simple value stored directly in memory (stack).
-for example - int, double, float, char, boolean.
-Referance = memory address (stack) that points to the (heap).
-for example - String, array, Object.
+ Primitive = simple value stored directly in memory (stack).
+ for example - int, double, float, char, boolean.
+ Referance = memory address (stack) that points to the (heap).
+ for example - String, array, Object.
 
 // Order of Operations
-[P-E-M-D-A-S] (priority, exponents, multiplication, divide, add, sub)
+ [P-E-M-D-A-S] (priority, exponents, multiplication, divide, add, sub)

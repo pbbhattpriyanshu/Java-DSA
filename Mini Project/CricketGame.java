@@ -15,7 +15,7 @@ public class CricketGame {
             System.out.print("Press Enter to bowl...");
             sc.nextLine();
             int ball = rand.nextInt(9); // 0 to 8
-            if (ball == 3 || ball == 5) {
+            if (ball == 5) {
                 System.out.println("You got OUT on " + ball + "!");
                 break;
             } else if (ball == 7) {
