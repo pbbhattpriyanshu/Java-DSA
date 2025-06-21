@@ -4,14 +4,24 @@ public class Revision {
         // if/else
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter your age: ");
-        int age = sc.nextInt();
-        if (age >= 18) {
-            System.out.println("You are Eligible");
+        boolean isStudent = true;
+        boolean isAdult;
+        // double discountPercent = 30;
+
+        System.out.print("Enter the actual cost: ");
+        double price = sc.nextDouble();
+        
+
+        if (isStudent) {
+            double discountAmount = (75.0 / 100) * price;
+            double finalPrice = price - discountAmount;
+            System.out.printf("Final price after discount: %.2f\n", finalPrice);
+
         } else {
-            System.out.println("Not Eligible");
+            double discountAmount = (15.0 / 100) * price;
+            double finalPrice = price - discountAmount;
+            System.out.printf("Final price after discount: %.2f\n", finalPrice);
         }
         sc.close();
-
     }
 }
