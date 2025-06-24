@@ -182,5 +182,16 @@ public class loops {
         //     }
         // }
 
+        // Mad Sister game
+
+        Scanner sc = new Scanner(System.in);
+        int number;
+
+        System.out.print("Please Enter the number: ");
+        number = sc.nextInt();
+
+        System.out.println("You Choose number " + number + ", Right 😎😎");
+
+        sc.close();
     }
 }
