@@ -35,3 +35,17 @@
 
  add = enqueue, offer()
  remove = dequeue, poll()
+
+ where a queue is useful:
+
+ Print Queue:
+ Managing print jobs sent to a printer in the order they arrive.
+
+ Task Scheduling:
+ Handling tasks in operating systems, such as CPU scheduling and process management.
+
+ Customer Service Systems:
+ Managing people waiting in line (e.g., call centers, ticket counters).
+
+ Breadth-First Search (BFS) in Graphs:
+ Used in algorithms to traverse or search tree/graph data structures.
