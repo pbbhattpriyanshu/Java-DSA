@@ -49,3 +49,7 @@
 
  Breadth-First Search (BFS) in Graphs:
  Used in algorithms to traverse or search tree/graph data structures.
+
+// What is Priority Queue?
+
+ A FIFP data structure that serves elements with the highest priorities first before elements with lower Priority.
