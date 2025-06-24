@@ -75,7 +75,7 @@ public class ConditionalSt {
         // System.out.println("Thank you, Please visit again");  
 
         // Switch Statement 
-        // int number = 6;
+        // int number = 2;
         // switch (number) {
         //     case 1:
         //         System.out.println("Samaso");
@@ -88,6 +88,36 @@ public class ConditionalSt {
         //     default:
         //         System.out.println("We are dreaming");
         // }
+
+        // Example 2 
+
+        String day = "Tuesday";
+
+        switch (day) {
+            case "Monday":
+                System.out.println("Monday = Boring day 🥴");
+                break;
+            case "Tuesday":
+                System.out.println("Tuesday = Still recovering 😑");
+                break;
+            case "Wednesday":
+                System.out.println("Wednesday = Midweek hustle 💪");
+                break;
+            case "Thursday":
+                System.out.println("Thursday = Almost there 😌");
+                break;
+            case "Friday":
+                System.out.println("Friday = Weekend vibes starting 😎");
+                break;
+            case "Saturday":
+                System.out.println("Saturday = Fun day! 🎉");
+                break;
+            case "Sunday":
+                System.out.println("Sunday = Relax and chill 😴");
+                break;
+            default:
+                System.out.println("Not a valid day!");
+        }
 
     }
 }
