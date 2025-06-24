@@ -1,0 +1,37 @@
+// What's a data structure?
+
+ Data structure: a named location that can be used to store and organize data.
+ Example: array
+ A collection of elements stored at contiguous memory locations.
+ char[] array;
+ ['H'],['E'],['L'],['L'],['O']
+
+// What's an algorithm?
+
+ Algorithm: a collection of steps to solve a problems.
+ Example: Baking a pizza
+ 1. Heat the ovem to 550F
+ 2. Kneed the dough
+ 3. Add topings
+
+// What is Stack?
+ 
+ stack = LIFO data structured, Last-In First-Out
+ stores objects into a sort of 'vertical tower'
+ push() to add to the top
+ pop() to remove from the top
+
+// Uses of Stack?
+
+ 1. undo or redo features in text editor
+ 2. moving backward and forward through browser history
+ 3. backtracking algorithm (maze, file directories)
+ 4. Calling function (call stack)
+
+// What is Queue?
+
+ FIFO data structure, Firt-In First-Out (ex. A line of people)
+ A collection designed for holding elements prior to processing Linear data structure.
+
+ add = enqueue, offer()
+ remove = dequeue, poll()
