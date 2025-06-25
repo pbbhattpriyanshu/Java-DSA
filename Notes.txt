@@ -30,3 +30,6 @@
  Output: I am 25 years old.
 
  printf() is useful for creating well-formatted and readable output.
+
+// FOR EMOJI IN TERMINAL
+ chcp 65001
