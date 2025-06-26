@@ -1,4 +1,4 @@
-public class declare {
+public class scope {
     static int x = 3; // Static variable, belongs to the class
 
     public static void main(String[] args) {
