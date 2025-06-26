@@ -24,10 +24,20 @@ public class Method {
             System.out.println("Bad news! you'r not elgible");
         }
     }
+
+    static void add(int a, int b) {
+        System.out.println(a + b);
+    }
+    static void add(int a, int b, int c) {
+        System.out.println(a + b + c);
+    }
     public static void main(String[] args) {
         // method 
 
         getFullName("Kajal", "bhatt");
         varification(1);
+
+        // overloaded method
+        add(3, 6, 6);
     }
 }

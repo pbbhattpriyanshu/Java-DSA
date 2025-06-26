@@ -36,3 +36,7 @@
 
 // Method 
  a block of reusable code that is executed when called ().
+
+// Overloaded methods 
+ method that share the same name, but different parameters 
+ signature = name + parameters
