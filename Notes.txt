@@ -33,3 +33,6 @@
 
 // FOR EMOJI IN TERMINAL
  chcp 65001
+
+// Method 
+ a block of reusable code that is executed when called ().
