@@ -62,6 +62,9 @@
 
  primitive datatypes         primitive datatypes can't be stored directly.
  can be stored.
+
+ // Define Syantax
+        ArrayList<String> list = new ArrayList<>();
  
  // Operation
    Add element - name.add()
@@ -70,5 +73,5 @@
    Set element at index - name.set(index, "value" )
    Contains element -  name.contains("value")
 
-   
+
  

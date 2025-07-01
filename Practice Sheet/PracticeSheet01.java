@@ -1,5 +1,5 @@
 import java.util.*;
-public class PracSheet01 {
+public class PracticeSheet01 {
     public static void main(String[] args) {
         //VARIABLES & DATA TYPES QUESTIONS
         //Question 1 : In a program, input 3 numbers : A, B and C. You have to output the average of 
