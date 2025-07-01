@@ -53,3 +53,22 @@
 // What is Priority Queue?
 
  A FIFP data structure that serves elements with the highest priorities first before elements with lower Priority.
+
+// ArrayList 
+
+ Array                       ArrayList
+
+ fixed size                  dynamic size
+
+ primitive datatypes         primitive datatypes can't be stored directly.
+ can be stored.
+ 
+ // Operation
+   Add element - name.add()
+   Get element - name.get()
+   Remove element - name.remove()
+   Set element at index - name.set(index, "value" )
+   Contains element -  name.contains("value")
+
+   
+ 
