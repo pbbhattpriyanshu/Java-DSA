@@ -1,7 +1,9 @@
-import java.util.*;
-public class arraylstDSA {
+package ArrayList;
+import java.util.ArrayList;
+public class MaxValue {
     public static void main(String[] args) {
         // DSA -- ArrayList Practice Sheet
+        // print max value in list
 
         ArrayList<Integer> list = new ArrayList<>();
 
@@ -12,7 +14,7 @@ public class arraylstDSA {
         list.add(9);
         list.add(8);
 
-        // print max value in list
+        
         int max = Integer.MAX_VALUE;
         System.out.println(max);
         
