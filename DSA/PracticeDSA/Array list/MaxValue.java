@@ -1,4 +1,3 @@
-package ArrayList;
 import java.util.ArrayList;
 public class MaxValue {
     public static void main(String[] args) {
