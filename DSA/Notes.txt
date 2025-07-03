@@ -72,6 +72,3 @@
    Remove element - name.remove()
    Set element at index - name.set(index, "value" )
    Contains element -  name.contains("value")
-
-
- 
