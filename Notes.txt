@@ -72,3 +72,9 @@
  Example
  String txt = "The character \\ is called backslash.";
 
+// imp
+ In Java, the return type of a function (method) is specified before the method name.
+
+ Use void if the method does not return any value.
+ Use a data type (like int, double, String, etc.) if the method returns a value of that type.
+
