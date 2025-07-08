@@ -88,9 +88,9 @@ public class PracticeSheet03 {
             for(int j=i+1; j<=n+1; j++) {
                 if (arr[i]+ arr[j] == k) {
                     System.out.println("Sum is found: " + "(" + i + "," + j + ")" );
-                }
-            }
-        }
+                };
+            };
+        };
 
     }
 }
