@@ -1,4 +1,4 @@
-// Lecture 6 - Oprators in java
+// Lecture - Oprators in java
 public class Operators {
     public static void main(String[] args) {
         // Symbols that tell compiler to perform some operation
@@ -24,12 +24,12 @@ public class Operators {
         // System.out.println(a);
         // System.out.println(b);
 
-        // int a = 32;
-        // int b = 34;
-        // System.out.println(a>b);
-        // System.out.println(a<b);
-        // System.out.println(a==b);
-        // System.out.println(a!=b);
+        int a = 32;
+        int b = 34;
+        System.out.println(a>b);
+        System.out.println(a<b);
+        System.out.println(a==b);
+        System.out.println(a!=b);
 
         // Logical table (AND)
         // S1  S2    ANS

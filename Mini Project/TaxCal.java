@@ -2,7 +2,7 @@ import java.util.*;
 public class TaxCal {
     public static void main(String[] args) {
         
-        // Income Tax Calculator
+        // Income Tax Calculator (if-else and else-if)
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Please Enter your Income: ");

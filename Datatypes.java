@@ -1,4 +1,4 @@
-// Lecture 4 - Data Types in java
+// Lecture - Data Types in java
 public class Datatypes {
     public static void main(String[] args) {
         // There are two types of datatype

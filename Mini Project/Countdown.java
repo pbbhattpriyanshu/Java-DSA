@@ -1,7 +1,7 @@
 import java.util.*;
 public class Countdown {
     public static void main(String[] args) {
-        // Countdown app
+        // Countdown app - for loop
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the starting number for countdown: ");
