@@ -2,8 +2,10 @@ package DSA.Arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//Reverse an array in place
+
 public class Reverse {
+    //Reverse an array in place
+    // Pattern learned: Two-pointer swapping.
     public static void reverse(int arr[]){
         int start = 0;
         int end = arr.length-1;
