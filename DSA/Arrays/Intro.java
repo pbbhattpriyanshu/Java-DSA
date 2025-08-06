@@ -1,6 +1,13 @@
 package DSA.Arrays;
-
 import java.util.Scanner;
+
+//Questions 🟢 Easy Level
+
+// Calculate sum & average of elements
+
+// Count how many numbers are even/odd
+
+// Check if an array is sorted or not
 
 public class Intro {
     // Sum of an Array
@@ -31,6 +38,24 @@ public class Intro {
         System.out.println("After Swaping index 0 = " + arr[0] + " and index 1 = " + arr[1]);
     }
 
+    //Check Even/Odd numbers in an array
+    public static void checkEvenOrOdd(int arr[]){
+        int evenCount = 0;
+        int oddCount = 0;
+        //Access all elements
+        for(int i=0; i<arr.length; i++){
+            //check for even
+            if (arr[i] % 2 == 0) {
+                evenCount = evenCount + 1;
+            }
+            //odd
+            if (arr[i] % 2 != 0) {
+                oddCount = oddCount + 1;
+            }
+        }
+        System.out.println("In an Array " + evenCount + " are Even Elements and " +  oddCount + " are Odd Elements");
+    }
+
     public static void main(String[] args) {
         // Syntax - type [] name = new type [size]
 
@@ -47,22 +72,23 @@ public class Intro {
         // };
 
         // Create an by taking Input
-        // Scanner sc = new Scanner(System.in);
-        // System.out.print("Enter Size of an arry: ");
-        // int n = sc.nextInt();
-        // int[] arr = new int[n];
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Size of an arry: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
 
         // Access every index to take input
-        // for (int i = 0; i < n; i++) {
-        //     System.out.print("Enter the value in " + i + " index: ");
-        //     arr[i] = sc.nextInt();
-        // }
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter the value in " + i + " index: ");
+            arr[i] = sc.nextInt();
+        }
 
         // Call
         // sum(arr);
         // avg(arr);
+        checkEvenOrOdd(arr);
 
-        //sc.close();
+        sc.close();
 
     }
 }

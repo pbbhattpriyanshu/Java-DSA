@@ -1,7 +1,7 @@
 package DSA.Arrays;
-
 import java.util.Scanner;
 
+// Find the maximum element in an array
 public class MaxValue {
     // Max Value
     public static void max(int arr[]) {
