@@ -49,11 +49,26 @@ public class Intro {
                 evenCount = evenCount + 1;
             }
             //odd
-            if (arr[i] % 2 != 0) {
+            else {
                 oddCount = oddCount + 1;
             }
         }
         System.out.println("In an Array " + evenCount + " are Even Elements and " +  oddCount + " are Odd Elements");
+    }
+
+    //Check Array is sorted or not
+    public static void checkSorted(int arr[]) {
+        boolean ascending = true;
+        boolean descending = true;
+
+        //access all values        
+        for(int i=0; i<arr.length-1; i++){
+            if (arr[i] > arr[i+1]) ascending = false;
+            if (arr[i] < arr[i+1]) descending = false;
+        }
+        //Condition - Print
+        if (ascending || descending) System.out.println("Array is sorted");
+        else System.out.println("Not sorted");
     }
 
     public static void main(String[] args) {
@@ -87,6 +102,7 @@ public class Intro {
         // sum(arr);
         // avg(arr);
         checkEvenOrOdd(arr);
+        checkSorted(arr);
 
         sc.close();
 
