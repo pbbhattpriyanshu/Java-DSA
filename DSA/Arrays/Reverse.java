@@ -24,7 +24,7 @@ public class Reverse {
         System.out.println("Reverse Array " + Arrays.toString(arr));
     }
     public static void main(String[] args) {
-        // Create an by taking Input
+        // Create an Array by taking Input
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Size of an arry: ");
         int n = sc.nextInt();

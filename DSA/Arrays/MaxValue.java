@@ -3,19 +3,23 @@ import java.util.Scanner;
 
 // Find the maximum element in an array
 public class MaxValue {
-    // Max Value
+    // Max Value and 2 Max value
     public static void max(int arr[]) {
         // Assume
-        int max_Value = arr[0];
+        int max_Value = Math.max(arr[0], arr[1]);
+        int max2_Value = Math.min(arr[0], arr[1]);
 
         // Access every element
-        for (int i = 1; i < arr.length; i++) {
+        for (int i = 2; i < arr.length; i++) {
             // compare with max value
             if (max_Value < arr[i]) {
+                max2_Value = max_Value;
                 max_Value = arr[i];
+            } else if (arr[i] > max2_Value & arr[i] != max_Value) {
+                max2_Value = arr[i];
             }
         }
-        System.out.println("Max value in this Array is " + max_Value);
+        System.out.println("First Max value in this Array is " + max_Value + " and Second Max value is " + max2_Value);
     }
 
     public static void main(String[] args) {
@@ -26,7 +30,7 @@ public class MaxValue {
         int[] arr = new int[n];
 
         // Validate Check
-        if (arr.length > 1) {
+        if (arr.length > 2) {
             // Access every index to take input
             for (int i = 0; i < n; i++) {
                 System.out.print("Enter the value in " + i + " index: ");
