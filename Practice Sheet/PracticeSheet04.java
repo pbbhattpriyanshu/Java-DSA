@@ -30,5 +30,17 @@ public class PracticeSheet04 {
         } else {
             System.out.println(year + " is not a leap year");
         }
+
+        // 3. Prime number 
+        int number = 49;
+        boolean isPrime = true;
+
+        for(int i = 2; i<=number-1; i++){
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }     
+        }
+        System.out.println(isPrime);
     }
 }
