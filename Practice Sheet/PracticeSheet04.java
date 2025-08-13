@@ -42,5 +42,26 @@ public class PracticeSheet04 {
             }     
         }
         System.out.println(isPrime);
+
+        // 4. Number is Palindrome
+        int num = 121;
+        int copy = num;
+        int Palindrome_number = 0;
+
+        while (num > 0) {
+            int r = num % 10;
+            Palindrome_number = (Palindrome_number * 10) + r;
+            num = num / 10;
+        }
+
+        if (copy == Palindrome_number) {
+            System.out.println("Number " + Palindrome_number + " is Palindrome");
+        } else {
+            System.out.println("Number " + copy + " is not Palindrome");
+        }
+
+        System.out.println("Result = " + Palindrome_number);
+
+
     }
 }
