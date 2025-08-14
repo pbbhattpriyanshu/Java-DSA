@@ -62,6 +62,27 @@ public class PracticeSheet04 {
 
         System.out.println("Result = " + Palindrome_number);
 
+        //todo: Linear searching
+        int arr[] = {1,3,5,7,45,87,23,98,31,89,125,8,3,1,8,9,22,8,4,50,55};
+        int target = 3;
+        boolean isTarget = false;
+        int index = 0;
+        int count = 0;
+        
+        //loop
+        for(int i = 0; i<arr.length; i++){
+            if (arr[i] == target) {
+                isTarget = true;
+                index = i;
+                count += 1;
+            } 
+        }
+        
+        if (isTarget == true) {
+            System.out.println("Target is found in this index: " + index + " count " + count);
+        } else {
+            System.out.println("Target is not in this location");
+        }
 
     }
 }
