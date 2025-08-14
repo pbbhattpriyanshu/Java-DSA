@@ -84,5 +84,21 @@ public class PracticeSheet04 {
             System.out.println("Target is not in this location");
         }
 
+        //     *
+        //    **
+        //   ***
+        //  ****
+        
+        int n = 4;
+        for (int line = 1; line <= n; line++) {
+            for (int chars = 1; chars <= n-line; chars++) {
+                System.out.print(" ");
+            }
+            for (int star = 1; star <= line; star++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
     }
 }
