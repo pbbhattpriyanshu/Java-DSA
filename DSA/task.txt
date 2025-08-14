@@ -1,0 +1,19 @@
+DSA topics you must know for service-based:
+
+Arrays & Strings – traversals, searching, sorting, reversing, frequency counts.
+
+Time and Space Complexities
+
+Recursion basics – factorial, Fibonacci, simple backtracking.
+
+Sorting & Searching – binary search, selection sort, bubble sort, insertion sort.
+
+HashMap / HashSet basics – frequency counting, removing duplicates.
+
+Simple linked list, stack, queue implementation.
+
+Basic math problems – GCD, LCM, prime numbers.
+
+Basic OOP in Java – class, object, inheritance, encapsulation, polymorphism.
+
+Target: Easy & medium questions on LeetCode / HackerRank (~150 problems in total).
