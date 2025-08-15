@@ -47,8 +47,22 @@ public class ArraySheet {
         // print max element & index
         System.out.println("Min Element: " + minElement + " at index " + minIndex);
     }
+
+    // 4 Sum of elements    Traversal     Easy   Summation logic
+    public static void sum(int arr[]){
+        //sum create
+        int sum = 0;
+
+        //traverse an array
+        for(int i=0; i<arr.length; i++){
+            sum = sum + arr[i]; //sum update add
+        }
+
+        //print sum
+        System.out.println("Sum of an array is " + sum);
+    }
     public static void main(String[] args) {
         int arr [] = {11,3,4,5,6,8,19,4,2,8};
-        min(arr);
+        sum(arr);
     }
 }
