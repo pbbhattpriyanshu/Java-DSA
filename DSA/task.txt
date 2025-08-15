@@ -1,19 +1,19 @@
 DSA topics you must know for service-based:
 
-Arrays & Strings – traversals, searching, sorting, reversing, frequency counts.
+Arrays & Strings – traversals, searching, sorting, reversing, frequency counts. -> 15 - 17 AUG 
 
-Time and Space Complexities
+Time and Space Complexities 18 - AUG
 
-Recursion basics – factorial, Fibonacci, simple backtracking.
+Recursion basics – factorial, Fibonacci, simple backtracking. 19 - 20 Aug
 
-Sorting & Searching – binary search, selection sort, bubble sort, insertion sort.
+Sorting & Searching – binary search, selection sort, bubble sort, insertion sort. 21 - 22 AUG
 
-HashMap / HashSet basics – frequency counting, removing duplicates.
+HashMap / HashSet basics – frequency counting, removing duplicates. 23 - 24 AUG
+ 
+Simple linked list, stack, queue implementation. 25 - 26 AUG
 
-Simple linked list, stack, queue implementation.
+Basic math problems – GCD, LCM, prime numbers. 27 - Aug
 
-Basic math problems – GCD, LCM, prime numbers.
-
-Basic OOP in Java – class, object, inheritance, encapsulation, polymorphism.
+Basic OOPs in Java – class, object, inheritance, encapsulation, polymorphism. 28 - 29 AUG
 
 Target: Easy & medium questions on LeetCode / HackerRank (~150 problems in total).
