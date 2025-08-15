@@ -1,6 +1,6 @@
 public class ArraySheet {
 
-    // 1 Print all elements of an array Traversal Easy Learn for loops
+    // 1 Print   all elements of an array    Traversal    Easy    Learn for loops
     public static void print(int arr[]) {
 
         System.out.print("Array: [");
@@ -10,7 +10,7 @@ public class ArraySheet {
         System.out.print("]");
     }
 
-    // 2 Find max element Traversal Easy Min/Max logic
+    // 2 Find max element    Traversal   Easy     Min/Max logic
     public static void max(int arr[]) {
 
         // assumption: index 0 has the max element initially
@@ -30,7 +30,7 @@ public class ArraySheet {
         System.out.println("Max Element: " + maxElement + " at index " + maxIndex);
     }
 
-    // 3 Find min element Traversal Easy Basic comparisons
+    // 3 Find min element    Traversal    Easy    Basic comparisons
     public static void min(int arr[]) {
         // assumption: index 0 has the min element initially
         int minElement = arr[0];
@@ -48,7 +48,7 @@ public class ArraySheet {
         System.out.println("Min Element: " + minElement + " at index " + minIndex);
     }
 
-    // 4 Sum of elements Traversal Easy Summation logic
+    // 4 Sum of elements    Traversal    Easy    Summation logic
     public static void sum(int arr[]) {
         // sum create
         int sum = 0;
@@ -89,7 +89,7 @@ public class ArraySheet {
         }
     }
 
-    // 6 Reverse an array Two-pointer Easy Index swap logic
+    // 6 Reverse an array     Two-pointer     Easy     Index swap logic
     public static void reverse(int arr[]) {
         // two pointer
         int left = 0;
