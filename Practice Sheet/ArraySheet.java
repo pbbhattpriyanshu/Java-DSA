@@ -21,6 +21,7 @@ public class ArraySheet {
         for(int i=1; i<arr.length; i++){
             if (maxElement < arr[i]) {
                 maxElement = arr[i];  
+
                 maxIndex = i; // update index when a new max is found              
             }
         }
@@ -28,8 +29,26 @@ public class ArraySheet {
         // print max element & index
         System.out.println("Max Element: " + maxElement + " at index " + maxIndex);
     }
+
+    // 3 Find min element     Traversal    Easy    Basic comparisons
+    public static void min(int arr[]){
+        // assumption: index 0 has the min element initially
+        int minElement = arr[0];
+        int minIndex = 0;
+
+        // traverse the array
+        for(int i=0; i<arr.length; i++){
+            if (minElement > arr[i]) {
+                minElement = arr[i];
+
+                minIndex = i; //update
+            }
+        }
+        // print max element & index
+        System.out.println("Min Element: " + minElement + " at index " + minIndex);
+    }
     public static void main(String[] args) {
-        int arr [] = {1,3,4,5,6,8,19,4,2,8};
-        max(arr);
+        int arr [] = {11,3,4,5,6,8,19,4,2,8};
+        min(arr);
     }
 }
