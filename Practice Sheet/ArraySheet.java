@@ -61,8 +61,32 @@ public class ArraySheet {
         //print sum
         System.out.println("Sum of an array is " + sum);
     }
+
+    // 5 Search element (Linear Search)   Linear Search   Easy     Brute force search
+    public static void linearSearch(int arr[]){
+        //target
+        int target = 2;
+        int index = 0;
+        boolean isTargetFound = false;
+
+        //traverse an array
+        for(int i=0; i<arr.length; i++){
+            if (target == arr[i]) {
+                isTargetFound = true;
+
+                index = arr[i];
+            } 
+        }
+
+        //condition
+        if (isTargetFound == true) {
+            System.out.println("Target " + target + " is found at index " + index);
+        } else {
+            System.out.println("Target " + target + " is not found");
+        }
+    }
     public static void main(String[] args) {
         int arr [] = {11,3,4,5,6,8,19,4,2,8};
-        sum(arr);
+        linearSearch(arr);
     }
 }
