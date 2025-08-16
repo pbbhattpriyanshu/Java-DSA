@@ -109,5 +109,17 @@ public class PracticeSheet04 {
             System.out.println("Value is Negative");
         }
 
+        //Body temperature is usually measured
+
+        double temperature = 46;
+
+        if (temperature <= 36.0) {
+            System.out.println("Hypothermia");
+        } else if (temperature >= 36.1 && temperature <= 37.2) {
+            System.out.println("Normal");
+        } else {
+            System.out.println("Fever");
+        }
+
     }
 }
