@@ -133,5 +133,16 @@ public class PracticeSheet04 {
         } else {
             System.out.println("No itself");
         }
+
+        //weekday/weekend
+        int day = 0;
+
+        if (day >= 1 && day <= 5 ) {
+            System.out.println("Weekday");
+        } else if (day >= 6 && day <= 7) {
+            System.out.println("Weekend");
+        } else {
+            System.out.println("No Such Day");
+        }
     }
 }
