@@ -121,5 +121,17 @@ public class PracticeSheet04 {
             System.out.println("Fever");
         }
 
+        //fizzBuzz
+        int xyz = 30;
+
+        if (xyz % 3 == 0 && xyz % 5 == 0) {
+            System.out.println("FizzBuzz");
+        } else if (xyz % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (xyz % 5 == 0) {
+            System.out.println("Buzz");
+        } else {
+            System.out.println("No itself");
+        }
     }
 }
