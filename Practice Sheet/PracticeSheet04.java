@@ -100,5 +100,14 @@ public class PracticeSheet04 {
             System.out.println();
         }
 
+        //find Positive and negative value
+        int abc = -7;
+
+        if (abc >= 0) {
+            System.out.println("Value is Positive");
+        } else {
+            System.out.println("Value is Negative");
+        }
+
     }
 }
