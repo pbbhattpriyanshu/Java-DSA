@@ -1,9 +1,9 @@
-//package DSA.Arrays;
+package DSA.Arrays;
 import java.util.Scanner;
 
-public class search{
+public class linearSearch{
     //linear Search
-    public static void linearSearch(int arr[], int target){
+    public static void Search(int arr[], int target){
         //boolean create
         boolean isFound = false;
 
@@ -23,6 +23,7 @@ public class search{
         }
 
     }
+
     public static void main(String[] args){
         //taking Input target
         Scanner sc = new Scanner(System.in);
@@ -30,7 +31,7 @@ public class search{
         int target = sc.nextInt();
 
         int arr[] = {12,4,5,74,84,88,3,69,6};
-        linearSearch(arr, target);
+        Search(arr, target);
       
        sc.close();
     }
