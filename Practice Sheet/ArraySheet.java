@@ -48,6 +48,62 @@ public class ArraySheet {
         System.out.println("Min Element: " + minElement + " at index " + minIndex);
     }
 
+    // 3.1 Find 2 largest element    Traversal    Easy    Basic comparisons
+    public static void twoLargest(int arr[]) {
+        //asume 
+        int largeOne = Math.max(arr[0], arr[1]);
+        int largeSecond = Math.min(arr[0], arr[1]);
+
+        //declare & initialize
+        int largeOneIndex = 0;
+        int largeSecondIndex = 0;
+
+        //traverse
+        for(int i=2; i< arr.length; i++){
+            //largestOne & index
+            if (largeOne < arr[i]) {
+                largeSecond = largeOne;
+                largeOne = arr[i];
+                largeOneIndex = i;
+            } else if (arr[i] > largeSecond && arr[i] != largeOne) {
+                largeSecond = arr[i];
+                largeSecondIndex = i;
+            }
+        }
+
+        // print largest element & index
+        System.out.println("First largest Element: " + largeOne + " at index " + largeOneIndex);
+        System.out.println("Second largest Element: " + largeSecond + " at index " + largeSecondIndex);
+    }
+
+    // 3.2 Find 2 Smallest element    Traversal    Easy    Basic comparisons
+    public static void twoSmallest(int arr[]) {
+        //asume 
+        int smallOne = Math.min(arr[0], arr[1]);
+        int smallSecond = Math.max(arr[0], arr[1]);
+
+        //declare & initialize
+        int smallOneIndex = 0;
+        int smallSecondIndex = 0;
+
+        //traverse
+        for(int i=2; i< arr.length; i++){
+            //largestOne & index
+            if (smallOne > arr[i]) {
+                smallSecond = smallOne;
+                smallOne = arr[i];
+                smallOneIndex = i;
+            } else if (arr[i] < smallSecond && arr[i] != smallOne) {
+                smallSecond = arr[i];
+                smallSecondIndex = i;
+            }
+        }
+
+        // print largest element & index
+        System.out.println("First smallest Element: " + smallOne + " at index " + smallOneIndex);
+        System.out.println("Second smallest Element: " + smallSecond + " at index " + smallSecondIndex);
+    }
+
     // 4 Sum of elements    Traversal    Easy    Summation logic
     public static void sum(int arr[]) {
         // sum create
@@ -123,6 +179,6 @@ public class ArraySheet {
 
     public static void main(String[] args) {
         int arr[] = { 11, 3, 4, 2, 5 };
-        reverse(arr);
+        twoSmallest(arr);
     }
 }

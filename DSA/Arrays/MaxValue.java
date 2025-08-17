@@ -15,7 +15,7 @@ public class MaxValue {
             if (max_Value < arr[i]) {
                 max2_Value = max_Value;
                 max_Value = arr[i];
-            } else if (arr[i] > max2_Value & arr[i] != max_Value) {
+            } else if (arr[i] > max2_Value && arr[i] != max_Value) {
                 max2_Value = arr[i];
             }
         }
