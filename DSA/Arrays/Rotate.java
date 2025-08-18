@@ -24,7 +24,7 @@ public class Rotate {
             count = count + 1;
         }
 
-        System.out.println("Array " + Arrays.toString(arr) + " Rotation: " + count);
+        System.out.println("Array " + Arrays.toString(arr) + " Rotation: " + count); 
     }
 
     public static void main(String[] args) {
