@@ -1,10 +1,10 @@
-package DSA.Arrays;
+// package DSA.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Rotate {
-    // Rotate array by k positions
+    // left Rotate array by k positions
     public static void rotateFront(int arr[], int rotation) {
         rotation = rotation % arr.length;
         int count = 0;
@@ -27,6 +27,29 @@ public class Rotate {
         System.out.println("Array " + Arrays.toString(arr) + " Rotation: " + count); 
     }
 
+    // Right Rotate array by k positions
+    public static void rotateBack(int arr[], int rotation){
+        rotation = rotation % arr.length;
+        int count = 0;
+
+        // Times - Rotation
+        for(int j = 1; j<=rotation; j++){
+            //temp value
+            int temp = arr[arr.length-1];
+
+            //loop access for all elements
+            for(int i=arr.length-1; i>0; i--){
+                arr[i] = arr[i-1];
+            }
+
+            //push
+            arr[0] = temp;
+
+            count = count + 1;
+        }
+
+        System.out.println("Array " + Arrays.toString(arr) + " Rotation: " + count); 
+    }
     public static void main(String[] args) {
         // Create an Array by taking Input
         Scanner sc = new Scanner(System.in);
@@ -44,7 +67,7 @@ public class Rotate {
             arr[i] = sc.nextInt();
         }
 
-        rotateFront(arr, rotation);
+        rotateBack(arr, rotation);
         sc.close();
     }
 }
