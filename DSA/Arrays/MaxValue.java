@@ -1,4 +1,4 @@
-package DSA.Arrays;
+//package DSA.Arrays;
 import java.util.Scanner;
 
 // Find the maximum element in an array
