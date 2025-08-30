@@ -14,44 +14,12 @@ This repository is my personal Java + Data Structures & Algorithms (DSA) learnin
 ## 📂 Project Structure
 
 ### Tree View
-JAVA-DSA/
-├── DSA/
-│   ├── Arrays/                # Array-related problems
-│   │   ├── Intro.java
-│   │   ├── linearSearch.java
-│   │   ├── MaxValue.java
-│   │   ├── MinValue.java
-│   │   ├── Merge.java
-│   │   ├── Reverse.java
-│   │   ├── Rotate.java
-│   │   ├── twoSum.java
-│   │   └── ...
-│   │
-│   ├── Mini Project/           # Small Java projects
-│   │   ├── banking.java
-│   │   ├── simpleCalc.java
-│   │   ├── CricketGame.java
-│   │   ├── MadLibsGame.java
-│   │   └── ...
-│   │
-│   ├── Practice Sheet/         # Practice exercises
-│   │   ├── ArraySheet01.java
-│   │   ├── ArraySheet02.java
-│   │   ├── ArraySheet03.java
-│   │   └── ArraySheet04.java
-│   │
-│   ├── Basics/                 # Core Java concepts
-│   │   ├── BoilerplateCode.java
-│   │   ├── ConditionalSt.java
-│   │   ├── Functions.java
-│   │   ├── Recursion.java
-│   │   ├── Pattern01.java
-│   │   ├── Pattern02.java
-│   │   └── ...
-│
-├── Notes.txt
-├── task.txt
-└── README.md
+- **Arrays/** → Array-related problems (search, reverse, rotation, etc.)
+- **Mini Project/** → Small Java programs (Banking, Calculator, Games, etc.)
+- **Practice Sheet/** → Exercises & problem sets
+- **Basics/** → Core Java concepts (loops, functions, recursion, patterns, etc.)
+- **Notes.txt** → My quick notes
+- **task.txt** → To-do or practice tasks
 
 
 ## Run Locally
