@@ -13,64 +13,41 @@ This repository is my personal Java + Data Structures & Algorithms (DSA) learnin
 
 ## 📂 Project Structure
 
+### Tree View
 JAVA-DSA/
-│
 ├── DSA/
-│   ├── Arrays/                  # Array-related problems
+│   ├── Arrays/                # Array-related problems
 │   │   ├── Intro.java
 │   │   ├── linearSearch.java
 │   │   ├── MaxValue.java
-│   │   ├── Merge.java
 │   │   ├── MinValue.java
-│   │   ├── RemoveDub.java
+│   │   ├── Merge.java
 │   │   ├── Reverse.java
 │   │   ├── Rotate.java
-│   │   ├── SearchWithSortedCheck.java
-│   │   ├── Sorted.java
 │   │   ├── twoSum.java
-│   │   └── Zero_end.java
+│   │   └── ...
 │   │
-│   ├── Mini Project/            # Small Java projects
+│   ├── Mini Project/           # Small Java projects
 │   │   ├── banking.java
-│   │   ├── CICalc.java
-│   │   ├── Countdown.java
-│   │   ├── CricketGame.java
-│   │   ├── discountCalc.java
-│   │   ├── guessG.java
-│   │   ├── JavaDicroller.java
-│   │   ├── MadLibsGame.java
-│   │   ├── shopingCart.java
 │   │   ├── simpleCalc.java
-│   │   ├── TaxCal.java
-│   │   ├── TempConversion.java
-│   │   └── WeightConv.java
+│   │   ├── CricketGame.java
+│   │   ├── MadLibsGame.java
+│   │   └── ...
 │   │
-│   ├── Practice Sheet/          # Practice exercises
+│   ├── Practice Sheet/         # Practice exercises
 │   │   ├── ArraySheet01.java
 │   │   ├── ArraySheet02.java
 │   │   ├── ArraySheet03.java
-│   │   ├── ArraySheet04.java
+│   │   └── ArraySheet04.java
 │   │
-│   ├── Arrays2D.java
-│   ├── BoilerplateCode.java
-│   ├── ConditionalSt.java
-│   ├── Datatypes.java
-│   ├── Functions.java
-│   ├── loops.java
-│   ├── maths.java
-│   ├── Method.java
-│   ├── Operators.java
-│   ├── Pattern01.java
-│   ├── Pattern02.java
-│   ├── randm.java
-│   ├── Recursion.java
-│   ├── Revision.java
-│   ├── scope.java
-│   ├── Str.java
-│   ├── TakingOutput.java
-│   ├── Ternaryop.java
-│   ├── TypeConversion.java
-│   └── Variables.java
+│   ├── Basics/                 # Core Java concepts
+│   │   ├── BoilerplateCode.java
+│   │   ├── ConditionalSt.java
+│   │   ├── Functions.java
+│   │   ├── Recursion.java
+│   │   ├── Pattern01.java
+│   │   ├── Pattern02.java
+│   │   └── ...
 │
 ├── Notes.txt
 ├── task.txt
