@@ -72,6 +72,8 @@ You can compile and run any .java file using:
 - All practice codes are self-written while learning
 
 - Repo will be updated continuously with new problem
+
+- link: https://leetcode.com/progress/
 ## License
 
 This repository is for educational purposes. Feel free to learn!
