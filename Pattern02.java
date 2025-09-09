@@ -105,7 +105,7 @@ public static void alphabetCap(int n){
         System.out.println();
     }
 }
-// Print n times of abcd (a = 64) + typecaste
+// Print n times of abcd (a = 97) + typecaste
 public static void alphabetSmall(int n){
     int abcd = 96;
     for(int i=1; i<n; i++){
