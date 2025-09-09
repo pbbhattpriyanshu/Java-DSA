@@ -94,7 +94,18 @@ public static void numberSq(int num){
         System.out.println();
     }
 }
+
+// Print n times of abcd (a = 64) + typecaste
+public static void alphabetCap(int n){
+    int abcd = 64;
+    for(int i=1; i<n; i++){
+        for(int j=1; j<=n; j++){
+            System.out.print((char)(j+abcd) + " ");
+        }
+        System.out.println();
+    }
+}
     public static void main(String[] args) {
-        numberSq(5);
+        alphabetCap(5);
     }
 }
