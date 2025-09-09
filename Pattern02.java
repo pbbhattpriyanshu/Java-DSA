@@ -105,6 +105,7 @@ public static void alphabetCap(int n){
         System.out.println();
     }
 }
+
 // Print n times of abcd (a = 97) + typecaste
 public static void alphabetSmall(int n){
     int abcd = 96;
@@ -115,7 +116,26 @@ public static void alphabetSmall(int n){
         System.out.println();
     }
 }
+
+//Right angle triangle
+public static void RightTri(int n) {
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+}
+// inverse Right angle triangle
+public static void inverseRightTri(int n) {
+    for(int i=1; i<=n; i++){
+        for(int j=i; j<=n; j++){
+            System.out.print("* ");
+        }
+        System.out.println();
+    }
+}
     public static void main(String[] args) {
-        alphabetSmall(5);
+        RightTri(4);
     }
 }
