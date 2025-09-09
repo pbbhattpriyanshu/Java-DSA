@@ -71,9 +71,18 @@ public class Pattern02 {
 //     }
 // }
 
-// 0-1 Triangle
-
+// Print the star pattern
+public static void starRectangle(int row, int col){
+    //outer loop
+    for(int i=1; i<=row; i++){
+        System.out.print("*");
+        for (int j=1; j<= col; j++) {
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+}
     public static void main(String[] args) {
-        
+        starRectangle(3,5);
     }
 }
