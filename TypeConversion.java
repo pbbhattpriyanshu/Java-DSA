@@ -35,6 +35,12 @@ public class TypeConversion {
         long c = 25;
         double d = 30;
         double ans = a + b + c + d;
-        System.out.println(ans); 
+        System.out.println(ans);
+        
+        int num1  = 5;
+        int num2 = 2;
+        double divResult = (double)num1/num2;
+
+        System.out.println(divResult);
     }
 }
