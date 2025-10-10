@@ -9,7 +9,8 @@ public class PracticeSheet05 {
         // int age = sc.nextInt();
         // double cgpa = sc.nextDouble();
 
-        // System.out.println("Hello " + name + ", you are " + age + " years old with a CGPA of " + cgpa);
+        // System.out.println("Hello " + name + ", you are " + age + " years old with a
+        // CGPA of " + cgpa);
 
         // Write a program that:
         // Asks the user for the number of students.
@@ -26,15 +27,37 @@ public class PracticeSheet05 {
         }
         // Prints all marks and their average.
         int totalMarks = 0;
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             totalMarks = totalMarks + numberStudent[i];
         }
 
         double average = totalMarks / n;
-        // Bonus: Add logic to find the highest and lowest mark.
 
+        // Bonus: Add logic to find the highest and lowest mark.
+        // Assume
+        int max_Marks = numberStudent[0];
+
+        // Access every element
+        for (int i = 1; i < numberStudent.length; i++) {
+            // compare with max value
+            if (max_Marks < numberStudent[i]) {
+                max_Marks = numberStudent[i];
+            }
+        }
+        // Assume
+        int min_Marks = numberStudent[0];
+
+        // Access every element
+        for (int i = 1; i < numberStudent.length; i++) {
+            // compare with max value
+            if (min_Marks > numberStudent[i]) {
+                min_Marks = numberStudent[i];
+            }
+        }
 
         System.out.println("Average Marks: " + average);
+        System.out.println("Highest Marks " + max_Marks);
+        System.out.println("Lowest Marks " + min_Marks);
 
         sc.close();
     }
