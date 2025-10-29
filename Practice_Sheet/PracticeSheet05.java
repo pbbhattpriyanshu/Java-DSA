@@ -59,6 +59,26 @@ public class PracticeSheet05 {
         System.out.println("Highest Marks " + max_Marks);
         System.out.println("Lowest Marks " + min_Marks);
 
+        // String Immutability
+        String s = "Hello";
+        s = s + "World";
+        System.out.println(s);
+
+        // Write a program that:
+        // Takes your full name as input.
+        String full_Name = sc.nextLine();
+        // Prints:
+        System.out.println("My name is " + full_Name);
+        // Your name in uppercase
+        System.out.println(full_Name.toUpperCase());
+        // The length of your name
+        System.out.println(full_Name.length());
+        // The first character
+        System.out.println(full_Name.charAt(0));
+        // Whether it contains “a” or not
+
+        // A version where all spaces are replaced by underscores
+        System.out.println(full_Name.(" ", '_'));
         sc.close();
     }
 }

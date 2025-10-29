@@ -50,7 +50,7 @@ public class ArraySheet {
 
     // 3.1 Find 2 largest element    Traversal    Easy    Basic comparisons
     public static void twoLargest(int arr[]) {
-        //asume 
+        //assume 
         int largeOne = Math.max(arr[0], arr[1]);
         int largeSecond = Math.min(arr[0], arr[1]);
 
@@ -78,7 +78,7 @@ public class ArraySheet {
 
     // 3.2 Find 2 Smallest element    Traversal    Easy    Basic comparisons
     public static void twoSmallest(int arr[]) {
-        //asume 
+        //assume 
         int smallOne = Math.min(arr[0], arr[1]);
         int smallSecond = Math.max(arr[0], arr[1]);
 
