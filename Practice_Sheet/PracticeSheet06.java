@@ -7,7 +7,7 @@ public class PracticeSheet06 {
         int n = 5;
         for(int row=1; row<=n; row++){
             for(int col=1; col<=n; col++){
-                if (col <= row) {
+                if (col >= row) {
                     System.out.print("*");
                 }
             }
