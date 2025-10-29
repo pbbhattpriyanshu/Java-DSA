@@ -1,79 +1,103 @@
-# 📘 Java-DSA Learning Repository
+# 🎯 Java DSA Learning Repository
 
-This repository is my personal Java + Data Structures & Algorithms (DSA) learning journey. It contains practice problems, mini projects, and notes to strengthen core Java concepts and improve problem-solving skills.## 📸 Screenshots
+A comprehensive collection of Data Structures, Algorithms, and Mini Projects implemented in Java.
 
-### Mini Project Example
-![Array Output](./assets/01.png)
-
-### Simple Calculator Example
-![Function Example](./assets/2.png)
-
-### DSA Example
-![Object Example](./assets/3.png)
+## 📚 Table of Contents
+- [Project Structure](#-project-structure)
+- [Core Concepts](#-core-concepts)
+- [Data Structures](#-data-structures)
+- [Mini Projects](#-mini-projects)
+- [Practice Problems](#-practice-problems)
+- [Getting Started](#-getting-started)
 
 ## 📂 Project Structure
-
-### Tree View
-- **Arrays/** → Array-related problems (search, reverse, rotation, etc.)
-- **Mini Project/** → Small Java programs (Banking, Calculator, Games, etc.)
-- **Practice Sheet/** → Exercises & problem sets
-- **Basics/** → Core Java concepts (loops, functions, recursion, patterns, etc.)
-- **Notes.txt** → My quick notes
-- **task.txt** → To-do or practice tasks
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-  https://github.com/pbbhattpriyanshu/Java-DSA.git
+```
+Java-DSA/
+├── DSA/                    # Data Structures & Algorithms
+│   ├── Arrays/            # Array operations & problems
+│   ├── PracticeDSA/      # Practice implementations
+│   └── Notes.txt         # Important concepts & tips
+├── Mini Project/         # Standalone applications
+├── Practice_Sheet/       # Coding exercises
+└── assets/              # Project resources
 ```
 
-Go to the project directory
+## 💡 Core Concepts
+- Variables & Data Types
+- Control Flow (Loops, Conditionals)
+- Functions & Methods
+- Object-Oriented Programming
+- Exception Handling
+- File I/O Operations
 
-```bash
-  cd Java-DSA
+## 📊 Data Structures
+```mermaid
+graph TD
+    A[Data Structures] --> B[Arrays]
+    A --> C[Queue]
+    A --> D[Stack]
+    A --> E[ArrayList]
+    B --> F[Linear Search]
+    B --> G[Binary Search]
+    B --> H[Sorting]
 ```
 
-Run Java files
+## 🎮 Mini Projects
+- Banking System
+- Calculator Applications
+- Games (Cricket, Dice Roller)
+- Conversion Tools
+- Mad Libs Game
 
-You can compile and run any .java file using:
+## 💻 Practice Problems
+- Array Manipulations
+- Pattern Printing
+- Mathematical Operations
+- String Operations
+- Search & Sort
 
+## 🚀 Getting Started
+
+### Prerequisites
+- Java JDK 8 or higher
+- Any Java IDE (VS Code recommended)
+
+### Installation
 ```bash
-  javac filename.java
-  java filename
+# Clone the repository
+git clone https://github.com/pbbhattpriyanshu/Java-DSA.git
+
+# Navigate to project directory
+cd Java-DSA
+
+# Compile and run any Java file
+javac filename.java
+java filename
 ```
 
+## 📝 Learning Path
+```mermaid
+graph LR
+    A[Basic Java] --> B[Data Structures]
+    B --> C[Algorithms]
+    C --> D[Problem Solving]
+    D --> E[Projects]
+```
 
-## 📌 Topics Covered
+## 🎯 Progress Tracking
+- [x] Basic Java Concepts
+- [x] Arrays and String Operations
+- [x] Basic Data Structures
+- [ ] Advanced Data Structures
+- [ ] Algorithm Analysis
+- [ ] Complex Problem Solving
 
-✔️ Core Java Basics (variables, datatypes, operators, loops, functions, OOP basics)
+## 🔗 Useful Links
+- [LeetCode Progress](https://leetcode.com/progress/)
+- [Java Documentation](https://docs.oracle.com/en/java/)
 
-✔️ DSA with Java (arrays, searching, recursion, patterns)
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-✔️ Mini Projects (Calculator, Banking System, Games, Converters)
-
-✔️ Practice Sheets (hands-on coding exercises for revision)
-
-## 🎯 Goals
-
-- Strengthen Java fundamentals
-
-- Improve problem-solving with DSA
-
-- Build mini projects for real-world understanding
-
-- Prepare for interviews & coding challenges
-
-## 📝 Notes
-
-
-- All practice codes are self-written while learning
-
-- Repo will be updated continuously with new problem
-
-- link: https://leetcode.com/progress/
-## License
-
-This repository is for educational purposes. Feel free to learn!
+---
+⭐ If you find this repository helpful, please consider giving it a star!
