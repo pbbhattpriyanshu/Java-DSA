@@ -5,3 +5,14 @@ Concepts (30 min/day)
 • Methods
 • Arrays in Java
 Practice (90 min/day): 5–7 beginner problems daily
+
+Day 4–7: Arrays (Deep Practice)
+Concepts:
+• Insert / delete / traversal
+• Prefix sums basics
+Problems (90 min):
+• Max/min
+• Reverse array
+• Kadane (subarray sum)
+• Move zeros
+Deadline: Day 7 → arrays fundamentals complete
