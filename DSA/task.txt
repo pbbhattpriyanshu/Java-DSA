@@ -16,3 +16,14 @@ Problems (90 min):
 • Kadane (subarray sum)
 • Move zeros
 Deadline: Day 7 → arrays fundamentals complete
+
+Day 8–12: Strings
+Concepts:
+• Mutable vs immutable
+• Char array
+Problems:
+• Palindrome
+• Reverse words
+• Count freq
+• Valid anagram
+Deadline: Day 12 → strings done
