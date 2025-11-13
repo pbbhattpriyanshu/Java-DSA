@@ -13,5 +13,14 @@ public class PracticeSheet06 {
             }
             System.out.println();
         }
+
+        //2. Swap two numbers using a third variable.
+        int a = 43;
+        int b = 56;
+        int temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("Value of A is " + a + " and value of B is " + b);
     }
 }
