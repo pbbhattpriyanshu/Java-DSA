@@ -1,4 +1,5 @@
 //Pattern -  Concepts
+import java.util.*;
 public class PracticeSheet06 {
     public static void main(String[] args) {
         //1. Box Strategy 
@@ -22,5 +23,18 @@ public class PracticeSheet06 {
         b = temp;
 
         System.out.println("Value of A is " + a + " and value of B is " + b);
+
+        //3. Calculate area and perimeter of rectangle from user input.
+        Scanner sc = new Scanner(System.in);
+        double length = sc.nextDouble();
+        double breadth = sc.nextDouble();
+
+        double Area = length * breadth;
+        double Perimeter = 2 * (length + breadth);
+
+        System.out.println("Area of Rectangle is " + Area + " and perimeter is " + Perimeter);
+
+        sc.close();
+
     }
 }
