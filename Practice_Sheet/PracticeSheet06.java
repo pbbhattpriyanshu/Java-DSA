@@ -36,5 +36,12 @@ public class PracticeSheet06 {
 
         sc.close();
 
+        //4. Print numbers 1-100 divisible by both 3 and 5
+        for(int i=1; i<=100; i++){
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("The numbers are " + i);
+            }
+        }
+
     }
 }
