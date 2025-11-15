@@ -52,5 +52,17 @@ public class PracticeSheet06 {
         }
 
         System.out.println("The Factorial of number " + num + " is " + fact);
+
+        //5. Reverse a number
+        int nums = 456;
+        int reverse = 0;
+
+        while (nums != 0) {
+            int digit = nums % 10;
+            reverse = reverse * 10 + digit;
+            nums = nums/10;
+        }
+
+        System.out.println("Reverse: " + reverse);
     }
 }
