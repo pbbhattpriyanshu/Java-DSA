@@ -64,5 +64,22 @@ public class PracticeSheet06 {
         }
 
         System.out.println("Reverse: " + reverse);
+
+        //Print Fibonacci sequence up to N.
+
+        int N = 10;
+        int n1 = 0;
+        int n2 = 1;
+
+        System.out.print("Fibonacci: ");
+
+        for(int i=1; i<=N; i++){
+
+             System.out.print(n1 + " ");
+
+            int Next = n1 + n2;
+            n1 = n2;
+            n2 = Next;
+        }
     }
 }
