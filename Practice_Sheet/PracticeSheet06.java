@@ -123,6 +123,8 @@ public class PracticeSheet06 {
         System.out.println("Digits: " + count);
 
         add(2,4);
+        int [] arr = {2,4,5,6,7};
+        ReverseArr(arr);
 
     }
 
@@ -130,5 +132,24 @@ public class PracticeSheet06 {
     public static void add(int a, int b){
         int add =  a + b;
         System.out.println("Sum: " + add);
+    }
+
+    //function - Reverse
+    public static void ReverseArr(int arr[]){
+        // create a temporary array with the same length and copy elements in reverse order
+        int temp[] = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            temp[i] = arr[arr.length - 1 - i];
+        }
+        // copy reversed values back into the original array (optional)
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = temp[i];
+        }
+
+        System.out.print("Reverse: ");
+        
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
