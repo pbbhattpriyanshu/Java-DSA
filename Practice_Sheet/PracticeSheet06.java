@@ -104,5 +104,23 @@ public class PracticeSheet06 {
         } else {
             System.out.println(numCheck + " is NOT a prime number.");
         }
+
+        //8. Count digits in a number
+        int numbr = 34;
+        int count = 0;
+
+        int rough = numbr;
+
+        if (rough == 0) {
+            count = 1;
+        } else {
+            while (rough != 0) {
+                rough = rough/10;
+                count++;
+            }
+        }
+
+        System.out.println("Digits: " + count);
+
     }
 }
