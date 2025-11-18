@@ -122,5 +122,13 @@ public class PracticeSheet06 {
 
         System.out.println("Digits: " + count);
 
+        add(2,4);
+
+    }
+
+    //function/method - add
+    public static void add(int a, int b){
+        int add =  a + b;
+        System.out.println("Sum: " + add);
     }
 }
