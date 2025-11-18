@@ -65,7 +65,7 @@ public class PracticeSheet06 {
 
         System.out.println("Reverse: " + reverse);
 
-        //Print Fibonacci sequence up to N.
+        //6. Print Fibonacci sequence up to N.
 
         int N = 10;
         int n1 = 0;
@@ -75,11 +75,34 @@ public class PracticeSheet06 {
 
         for(int i=1; i<=N; i++){
 
-             System.out.print(n1 + " ");
-
+            System.out.print(n1 + " ");
+    
             int Next = n1 + n2;
             n1 = n2;
             n2 = Next;
+        }
+
+        System.out.println();
+
+        //7. Check if a number is prime
+        int numCheck = 8;
+        boolean isPrime = true;
+
+        if (numCheck <= 1) {
+            isPrime = false;
+        } else {
+            for(int i = 2; i * i <= numCheck; i++){
+                if (numCheck % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        if (isPrime) {
+            System.out.println( numCheck + " is prime number");
+        } else {
+            System.out.println(numCheck + " is NOT a prime number.");
         }
     }
 }
