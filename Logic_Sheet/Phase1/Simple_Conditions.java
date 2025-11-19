@@ -21,7 +21,6 @@ public class Simple_Conditions {
         }
     }
 
-
     //2. Check if a number is even or odd.
     public static void checkNum(int number){
         if (number % 2 == 0) {
@@ -30,8 +29,18 @@ public class Simple_Conditions {
             System.out.println("The given number is Odd");
         }
     }
+
+    //3. Check if a number is divisible by 5.
+    public static void numby5(int number){
+        if (number % 5 == 0) {
+            System.out.println("The given number is easily divisible by 5");
+        } else{
+            System.out.println("Did not divisible by 5");
+        }
+    }
     public static void main(String[] args) {
         checkNumber(0);
         checkNum(4);
+        numby5(45);
     }    
 }
