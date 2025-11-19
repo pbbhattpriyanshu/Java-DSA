@@ -20,7 +20,18 @@ public class Simple_Conditions {
             System.out.println("The given number is Negative");
         }
     }
+
+
+    //2. Check if a number is even or odd.
+    public static void checkNum(int number){
+        if (number % 2 == 0) {
+            System.out.println("The given number is Even");
+        } else {
+            System.out.println("The given number is Odd");
+        }
+    }
     public static void main(String[] args) {
         checkNumber(0);
+        checkNum(4);
     }    
 }
