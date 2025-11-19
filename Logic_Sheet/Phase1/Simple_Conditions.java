@@ -38,9 +38,19 @@ public class Simple_Conditions {
             System.out.println("Did not divisible by 5");
         }
     }
+
+    //4. Check if a number is divisible by both 3 and 5.
+    public static void numby3and5(int number){
+        if (number % 3 == 0 & number % 5 == 0) {
+            System.out.println("Yes the number " + number + " is divisible by both 3 and 5");
+        } else {
+            System.out.println("The number can't be divisible by both 3 and 5");
+        }
+    }
     public static void main(String[] args) {
         checkNumber(0);
         checkNum(4);
         numby5(45);
+        numby3and5(15);
     }    
 }
