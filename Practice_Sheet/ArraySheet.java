@@ -1,6 +1,6 @@
 public class ArraySheet {
 
-    // 1 Print   all elements of an array    Traversal    Easy    Learn for loops
+    // 1 Print all elements of an array Traversal Easy Learn for loops
     public static void print(int arr[]) {
 
         System.out.print("Array: [");
@@ -10,7 +10,7 @@ public class ArraySheet {
         System.out.print("]");
     }
 
-    // 2 Find max element    Traversal   Easy     Min/Max logic
+    // 2 Find max element Traversal Easy Min/Max logic
     public static void max(int arr[]) {
 
         // assumption: index 0 has the max element initially
@@ -30,7 +30,7 @@ public class ArraySheet {
         System.out.println("Max Element: " + maxElement + " at index " + maxIndex);
     }
 
-    // 3 Find min element    Traversal    Easy    Basic comparisons
+    // 3 Find min element Traversal Easy Basic comparisons
     public static void min(int arr[]) {
         // assumption: index 0 has the min element initially
         int minElement = arr[0];
@@ -48,19 +48,19 @@ public class ArraySheet {
         System.out.println("Min Element: " + minElement + " at index " + minIndex);
     }
 
-    // 3.1 Find 2 largest element    Traversal    Easy    Basic comparisons
+    // 3.1 Find 2 largest element Traversal Easy Basic comparisons
     public static void twoLargest(int arr[]) {
-        //assume 
+        // assume
         int largeOne = Math.max(arr[0], arr[1]);
         int largeSecond = Math.min(arr[0], arr[1]);
 
-        //declare & initialize
+        // declare & initialize
         int largeOneIndex = 0;
         int largeSecondIndex = 0;
 
-        //traverse
-        for(int i=2; i< arr.length; i++){
-            //largestOne & index
+        // traverse
+        for (int i = 2; i < arr.length; i++) {
+            // largestOne & index
             if (largeOne < arr[i]) {
                 largeSecond = largeOne;
                 largeOne = arr[i];
@@ -76,19 +76,19 @@ public class ArraySheet {
         System.out.println("Second largest Element: " + largeSecond + " at index " + largeSecondIndex);
     }
 
-    // 3.2 Find 2 Smallest element    Traversal    Easy    Basic comparisons
+    // 3.2 Find 2 Smallest element Traversal Easy Basic comparisons
     public static void twoSmallest(int arr[]) {
-        //assume 
+        // assume
         int smallOne = Math.min(arr[0], arr[1]);
         int smallSecond = Math.max(arr[0], arr[1]);
 
-        //declare & initialize
+        // declare & initialize
         int smallOneIndex = 0;
         int smallSecondIndex = 0;
 
-        //traverse
-        for(int i=2; i< arr.length; i++){
-            //largestOne & index
+        // traverse
+        for (int i = 2; i < arr.length; i++) {
+            // largestOne & index
             if (smallOne > arr[i]) {
                 smallSecond = smallOne;
                 smallOne = arr[i];
@@ -104,7 +104,7 @@ public class ArraySheet {
         System.out.println("Second smallest Element: " + smallSecond + " at index " + smallSecondIndex);
     }
 
-    // 4 Sum of elements    Traversal    Easy    Summation logic
+    // 4 Sum of elements Traversal Easy Summation logic
     public static void sum(int arr[]) {
         // sum create
         int sum = 0;
@@ -145,7 +145,7 @@ public class ArraySheet {
         }
     }
 
-    // 6 Reverse an array     Two-pointer     Easy     Index swap logic
+    // 6 Reverse an array Two-pointer Easy Index swap logic
     public static void reverse(int arr[]) {
         // two pointer
         int left = 0;
@@ -163,11 +163,10 @@ public class ArraySheet {
             arr[left] = arr[right];
             arr[right] = temp;
 
-            //move pointers
+            // move pointers
             left++;
             right--;
         }
-        
 
         // print Reverse array
         System.out.print(" and Reverse array: ");
@@ -177,8 +176,27 @@ public class ArraySheet {
 
     }
 
+    // 7 Average of array elements
+    public static void Average(int arr[]) {
+        // sum create
+        double sum = 0;
+
+        // traverse an array
+        for (int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i]; // sum update add
+        }
+
+        // Average logic
+        double avg = sum/arr.length;
+
+        // print sum
+        System.out.println("Sum of Cricket Runs are: " + (int)sum);
+        // print avg
+        System.out.println("Average of Cricket Runs are: " + avg);
+    }
+
     public static void main(String[] args) {
-        int arr[] = { 11, 3, 4, 2, 5 };
-        print(arr);
+        int arr[] = { 45,56,78,2,56 };
+        Average(arr);
     }
 }
