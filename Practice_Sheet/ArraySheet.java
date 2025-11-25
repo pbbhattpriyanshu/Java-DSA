@@ -195,8 +195,26 @@ public class ArraySheet {
         System.out.println("Average of Cricket Runs are: " + avg);
     }
 
+    // 8 Count even & odd elements
+    public static void oddorEven(int arr[]){
+        int oddNum = 0;
+        int evenNum = 0;
+
+        //traverse
+        for(int i = 0; i < arr.length; i++){
+            if (arr[i] % 2 == 0) {
+                evenNum = evenNum + 1;
+            } else {
+                oddNum++;
+            }
+        }
+
+        //Print Output
+        System.out.println("There is total " + evenNum + " even numbers and " + oddNum + " odd numbers");
+    }
+
     public static void main(String[] args) {
-        int arr[] = { 45,56,78,2,56 };
-        Average(arr);
+        int arr[] = { 45,56,78,2,56,45,5,3,7,6,22,121 };
+        oddorEven(arr);
     }
 }
