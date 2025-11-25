@@ -120,9 +120,9 @@ public class ArraySheet {
 
     // 5 Search element (Linear Search) / Count occurrences of an element Linear
     // Search Easy Brute force search / Frequency counting
-    public static void linearSearch(int arr[]) {
+    public static void linearSearch(int arr[], int find) {
         // target
-        int target = 2;
+        int target = find;
         int index = 0;
         int count = 0;
         boolean isTargetFound = false;
@@ -214,7 +214,7 @@ public class ArraySheet {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 45,56,78,2,56,45,5,3,7,6,22,121 };
-        oddorEven(arr);
+        int arr[] = { 45,56,78,2,56,45,5,3,7,6,22 };
+        linearSearch(arr, 7);
     }
 }
