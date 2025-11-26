@@ -1,5 +1,5 @@
 public record BubbleSort() {
-    //Bubble Sort
+    //Bubble Sort - Ascending order
     public static void bbleSort(int arr[], int n){
         //Phase loop
         for(int i=0; i<n-1; i++){
