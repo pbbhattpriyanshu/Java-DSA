@@ -32,7 +32,6 @@ public class Sorted {
         System.out.print("Enter Size of an arry: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
-
         // Validate Check
         if (arr.length > 2) {
             // Access every index to take input
