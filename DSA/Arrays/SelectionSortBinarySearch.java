@@ -1,8 +1,6 @@
 public class SelectionSortBinarySearch {
 
-    // -------------------------------
     // 1) Selection Sort (Ascending)
-    // -------------------------------
     public static void selectionSort(int arr[]) {
         int n = arr.length;
 
@@ -26,9 +24,7 @@ public class SelectionSortBinarySearch {
         }
     }
 
-    // -------------------------------
     // 2) Binary Search
-    // -------------------------------
     public static int binarySearch(int arr[], int key) {
 
         int low = 0, high = arr.length - 1;
@@ -50,9 +46,7 @@ public class SelectionSortBinarySearch {
         return -1; // not found
     }
 
-    // -------------------------------
     // MAIN
-    // -------------------------------
     public static void main(String[] args) {
 
         int arr[] = {7, 3, 12, 1, 9, 5};
