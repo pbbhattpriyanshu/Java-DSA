@@ -35,10 +35,32 @@ public class PracticeSheet07 {
 
         System.out.println("Max Value: " + maxValue);
     }
+
+    //Check if array is sorted or not
+    public static void CheckSorted(int []arr, int n){
+        boolean isAscending = true;
+        boolean isDescending = true;
+
+        for(int i=0; i<n-1; i++){
+            if (arr[i] > arr[i+1]) {
+                isAscending = false;
+            } else if (arr[i] < arr[i+1]) {
+                isDescending = false;
+            } 
+        }
+
+        if (isDescending) {
+            System.out.println("Array is Sorted in Descending order");
+        } else if (isAscending) {
+            System.out.println("Array is Sorted in Ascending order");
+        } else {
+            System.out.println("Array is not sorted");
+        }
+    }
     public static void main(String[] args) {
-        int [] arr = {45,8,3,12,56,2,3,4,5};
+        int [] arr = {5,4,2,1,0};
         int n = arr.length;
 
-        Max(arr, n);
+        CheckSorted(arr, n);
     }
 }
