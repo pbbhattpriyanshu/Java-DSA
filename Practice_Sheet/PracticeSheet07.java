@@ -57,10 +57,34 @@ public class PracticeSheet07 {
             System.out.println("Array is not sorted");
         }
     }
+
+    //Move Zero at the end
+    public static void MoveZeros(int[] arr, int n){
+        int j = 0;
+        //traverse - non zero elements - move starts
+        for(int i=0; i<n; i++){
+            if (arr[i] != 0) {
+                arr[j] = arr[i];
+
+                j++;
+            }
+        }
+
+        //traverse for moving zeros at the end
+        for(; j<n; j++){
+            arr[j] = 0;
+        }
+
+        //print
+        System.out.println("New Array: ");
+        for(int i=0; i<n; i++){
+            System.out.println(arr[i]);
+        }
+    }
     public static void main(String[] args) {
-        int [] arr = {5,4,2,1,0};
+        int [] arr = {5,0,3,0,0,1,6,7,0,0,4};
         int n = arr.length;
 
-        CheckSorted(arr, n);
+        MoveZeros(arr, n);
     }
 }
