@@ -81,10 +81,32 @@ public class PracticeSheet07 {
             System.out.println(arr[i]);
         }
     }
+
+    //Left Rotation by 1
+    public static void LeftRotation(int[] arr, int n){
+        //temp variable
+        int temp = arr[0];
+
+        //traverse
+        for(int i=0; i<n-1; i++){
+            //logic
+            arr[i] = arr[i+1];
+        }
+
+        //last index add on
+        arr[n-1] = temp;
+
+        //print
+        System.out.println("Left Rotate Array by One: ");
+        for(int i=0; i<n; i++){
+            System.out.println(arr[i]);
+        }
+    }
+
     public static void main(String[] args) {
-        int [] arr = {5,0,3,0,0,1,6,7,0,0,4};
+        int [] arr = {6,2,3,4,5};
         int n = arr.length;
 
-        MoveZeros(arr, n);
+        LeftRotation(arr, n);
     }
 }
