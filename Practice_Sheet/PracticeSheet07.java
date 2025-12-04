@@ -103,10 +103,31 @@ public class PracticeSheet07 {
         }
     }
 
+    //Right Rotation by 1
+    public static void RightRotation(int[] arr, int n){
+        //temp variable
+        int temp = arr[n-1];
+
+        //traverse
+        for(int i=n-1; i>0; i--){
+            //logic
+            arr[i] = arr[i-1];
+        }
+
+        //last index add on
+        arr[0] = temp;
+
+        //print
+        System.out.println("Right Rotate Array by One: ");
+        for(int i=0; i<n; i++){
+            System.out.println(arr[i]);
+        }
+    }
+
     public static void main(String[] args) {
-        int [] arr = {6,2,3,4,5};
+        int [] arr = {1,2,3,4,5};
         int n = arr.length;
 
-        LeftRotation(arr, n);
+        RightRotation(arr, n);
     }
 }
