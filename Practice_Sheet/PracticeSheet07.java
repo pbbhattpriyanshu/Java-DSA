@@ -1,7 +1,7 @@
 public class PracticeSheet07 {
-    //Reverse loop
-    public static void revrse(int[] arr, int n){
-        //two pointer array
+    // Reverse loop
+    public static void revrse(int[] arr, int n) {
+        // two pointer array
         int left = 0;
         int right = n - 1;
 
@@ -14,20 +14,20 @@ public class PracticeSheet07 {
             right--;
         }
 
-        //traverse 
+        // traverse
         System.out.println("Reverse Array: ");
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
         }
 
     }
 
-    //MaX Value
-    public static void Max(int []arr, int n){
+    // MaX Value
+    public static void Max(int[] arr, int n) {
         int maxValue = arr[0];
-        
-        //loop
-        for(int i=1; i<n; i++){
+
+        // loop
+        for (int i = 1; i < n; i++) {
             if (maxValue < arr[i]) {
                 maxValue = arr[i];
             }
@@ -36,17 +36,17 @@ public class PracticeSheet07 {
         System.out.println("Max Value: " + maxValue);
     }
 
-    //Check if array is sorted or not
-    public static void CheckSorted(int []arr, int n){
+    // Check if array is sorted or not
+    public static void CheckSorted(int[] arr, int n) {
         boolean isAscending = true;
         boolean isDescending = true;
 
-        for(int i=0; i<n-1; i++){
-            if (arr[i] > arr[i+1]) {
+        for (int i = 0; i < n - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
                 isAscending = false;
-            } else if (arr[i] < arr[i+1]) {
+            } else if (arr[i] < arr[i + 1]) {
                 isDescending = false;
-            } 
+            }
         }
 
         if (isDescending) {
@@ -58,11 +58,11 @@ public class PracticeSheet07 {
         }
     }
 
-    //Move Zero at the end
-    public static void MoveZeros(int[] arr, int n){
+    // Move Zero at the end
+    public static void MoveZeros(int[] arr, int n) {
         int j = 0;
-        //traverse - non zero elements - move starts
-        for(int i=0; i<n; i++){
+        // traverse - non zero elements - move starts
+        for (int i = 0; i < n; i++) {
             if (arr[i] != 0) {
                 arr[j] = arr[i];
 
@@ -70,64 +70,88 @@ public class PracticeSheet07 {
             }
         }
 
-        //traverse for moving zeros at the end
-        for(; j<n; j++){
+        // traverse for moving zeros at the end
+        for (; j < n; j++) {
             arr[j] = 0;
         }
 
-        //print
+        // print
         System.out.println("New Array: ");
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
         }
     }
 
-    //Left Rotation by 1
-    public static void LeftRotation(int[] arr, int n){
-        //temp variable
+    // Left Rotation by 1
+    public static void LeftRotation(int[] arr, int n) {
+        // temp variable
         int temp = arr[0];
 
-        //traverse
-        for(int i=0; i<n-1; i++){
-            //logic
-            arr[i] = arr[i+1];
+        // traverse
+        for (int i = 0; i < n - 1; i++) {
+            // logic
+            arr[i] = arr[i + 1];
         }
 
-        //last index add on
-        arr[n-1] = temp;
+        // last index add on
+        arr[n - 1] = temp;
 
-        //print
+        // print
         System.out.println("Left Rotate Array by One: ");
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
         }
     }
 
-    //Right Rotation by 1
-    public static void RightRotation(int[] arr, int n){
-        //temp variable
-        int temp = arr[n-1];
+    // Right Rotation by 1
+    public static void RightRotation(int[] arr, int n) {
+        // temp variable
+        int temp = arr[n - 1];
 
-        //traverse
-        for(int i=n-1; i>0; i--){
-            //logic
-            arr[i] = arr[i-1];
+        // traverse
+        for (int i = n - 1; i > 0; i--) {
+            // logic
+            arr[i] = arr[i - 1];
         }
 
-        //last index add on
+        // last index add on
         arr[0] = temp;
 
-        //print
+        // print
         System.out.println("Right Rotate Array by One: ");
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
+            System.out.println(arr[i]);
+        }
+    }
+
+    // Rotation by K times
+    public static void Rotation(int[] arr, int n, int k) {
+        k = k % arr.length;
+        // K times
+        for (int j = 0; j < k; j++) {
+            // temp variable
+            int temp = arr[0];
+            // traverse
+            for (int i = 0; i < n - 1; i++) {
+                // logic
+                arr[i] = arr[i + 1];
+            }
+            // last index add on
+            arr[n - 1] = temp;
+        }
+
+        // print
+        System.out.println("Rotate Array by k times: ");
+        for (int i = 0; i < n; i++) {
             System.out.println(arr[i]);
         }
     }
 
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5};
+        int[] arr = { 1, 2, 3, 4, 5 };
+        int k = 4;
         int n = arr.length;
 
-        RightRotation(arr, n);
+        Rotation(arr, n, k);
     }
 }
