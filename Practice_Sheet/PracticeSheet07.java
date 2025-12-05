@@ -147,11 +147,28 @@ public class PracticeSheet07 {
         }
     }
 
+    // Optimize Code of Rotation by k times
+    public static void optRotation(int[] arr, int n, int k) {
+        int[] temp =  new int[arr.length];
+        k = k % arr.length;
+        // K times
+        for (int i = 0; i < n; i++) {
+            //logic
+            temp[i] = arr[(i+k) % arr.length];
+        }
+
+        // print
+        System.out.println("Rotate Array by k times: ");
+        for (int i = 0; i < n; i++) {
+            System.out.println(temp[i]);
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5 };
-        int k = 4;
+        int k = 2;
         int n = arr.length;
 
-        Rotation(arr, n, k);
+        optRotation(arr, n, k);
     }
 }
