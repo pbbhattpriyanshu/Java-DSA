@@ -181,7 +181,7 @@ public class PracticeSheet07 {
             }
         }
 
-         int newLen = j + 1;
+        int newLen = j + 1;
 
         // Print output here
         System.out.println("New length: " + newLen);
