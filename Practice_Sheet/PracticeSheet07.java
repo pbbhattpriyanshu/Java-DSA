@@ -151,12 +151,12 @@ public class PracticeSheet07 {
 
     // Optimize Code of Rotation by k times
     public static void optRotation(int[] arr, int n, int k) {
-        int[] temp =  new int[arr.length];
+        int[] temp = new int[arr.length];
         k = k % arr.length;
         // K times
         for (int i = 0; i < n; i++) {
-            //logic
-            temp[i] = arr[(i+k) % arr.length];
+            // logic
+            temp[i] = arr[(i + k) % arr.length];
         }
 
         // print
@@ -167,17 +167,17 @@ public class PracticeSheet07 {
     }
 
     // Remove Duplicates from Sorted Array
-    public static void removeDublicate(int arr[]){
-        //print before remove dublicate element
+    public static void removeDublicate(int arr[]) {
+        // print before remove dublicate element
         System.out.println("before remove dublicate element Array " + Arrays.toString(arr));
-        //slow pointer
+        // slow pointer
         int j = 0;
 
-        //traverse
-        for(int i=1; i<arr.length; i++){  //found new unique
+        // traverse
+        for (int i = 1; i < arr.length; i++) { // found new unique
             if (arr[i] != arr[j]) {
                 j++;
-                arr[j] = arr[i];       // place unique
+                arr[j] = arr[i]; // place unique
             }
         }
 
@@ -192,33 +192,52 @@ public class PracticeSheet07 {
         System.out.println(); // line break
     }
 
-    //Max Subarray
+    // Max Subarray
     public static int maxSubarraySum(int[] arr) {
-    int current = 0;
-    int maxSum = Integer.MIN_VALUE;
+        int current = 0;
+        int maxSum = Integer.MIN_VALUE;
 
-    for (int i = 0; i < arr.length; i++) {
-        current += arr[i];
+        for (int i = 0; i < arr.length; i++) {
+            current += arr[i];
 
-        // update best answer so far
-        if (current > maxSum) {
-            maxSum = current;
+            // update best answer so far
+            if (current > maxSum) {
+                maxSum = current;
+            }
+
+            // if running sum becomes negative, drop it
+            if (current < 0) {
+                current = 0;
+            }
         }
 
-        // if running sum becomes negative, drop it
-        if (current < 0) {
-            current = 0;
-        }
+        return maxSum;
     }
 
-    return maxSum;
-}
+    public static void subarraySum(int[] arr, int L, int R) {
+        int prefix[] = new int[arr.length];
+        prefix[0] = arr[0];
 
-    
+        // build prefix sum array
+        for (int i = 1; i < arr.length; i++) {
+            prefix[i] = prefix[i - 1] + arr[i];
+        }
+
+        // formula
+        int sum;
+        if (L == 0) {
+            sum = prefix[R];
+        } else {
+            sum = prefix[R] - prefix[L - 1];
+        }
+
+        System.out.println("Sum of arr[" + L + "..." + R + "] = " + sum);
+    }
+
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5 };
-        //int k = 2;
-        //int n = arr.length;
+        // int k = 2;
+        // int n = arr.length;
 
         // check if array is sorted
 
