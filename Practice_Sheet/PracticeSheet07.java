@@ -191,6 +191,30 @@ public class PracticeSheet07 {
         }
         System.out.println(); // line break
     }
+
+    //Max Subarray
+    public static int maxSubarraySum(int[] arr) {
+    int current = 0;
+    int maxSum = Integer.MIN_VALUE;
+
+    for (int i = 0; i < arr.length; i++) {
+        current += arr[i];
+
+        // update best answer so far
+        if (current > maxSum) {
+            maxSum = current;
+        }
+
+        // if running sum becomes negative, drop it
+        if (current < 0) {
+            current = 0;
+        }
+    }
+
+    return maxSum;
+}
+
+    
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3, 4, 5 };
         //int k = 2;
