@@ -42,6 +42,23 @@ public class PracticeSheet08 {
         System.out.println("Factorial of " + n + " = " + fact);
     }
 
+    //PALINDROME NUMBER CHECK
+    public static void isPalindrome(int n) {
+        int original = n;
+        int rev = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+
+        if (rev == original)
+            System.out.println(original + " is Palindrome");
+        else
+            System.out.println(original + " is NOT Palindrome");
+    }
+
     public static void main(String[] args) {
 
     }
