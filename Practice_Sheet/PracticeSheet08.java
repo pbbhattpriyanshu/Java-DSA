@@ -1,5 +1,5 @@
 public class PracticeSheet08 {
-    //COUNT VOWELS IN A STRING
+    // COUNT VOWELS IN A STRING
     public static void countVowels(String s) {
         s = s.toLowerCase();
         int count = 0;
@@ -12,6 +12,18 @@ public class PracticeSheet08 {
         }
 
         System.out.println("Total vowels = " + count);
+    }
+
+    //SUM OF DIGITS OF A NUMBER
+    public static void sumOfDigits(int n) {
+        int sum = 0;
+
+        while (n > 0) {
+            sum += n % 10;
+            n = n / 10;
+        }
+
+        System.out.println("Sum of digits = " + sum);
     }
 
     public static void main(String[] args) {
