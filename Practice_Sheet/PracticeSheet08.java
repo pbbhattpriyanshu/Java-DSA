@@ -42,7 +42,7 @@ public class PracticeSheet08 {
         System.out.println("Factorial of " + n + " = " + fact);
     }
 
-    //PALINDROME NUMBER CHECK
+    // PALINDROME NUMBER CHECK
     public static void isPalindrome(int n) {
         int original = n;
         int rev = 0;
@@ -57,6 +57,23 @@ public class PracticeSheet08 {
             System.out.println(original + " is Palindrome");
         else
             System.out.println(original + " is NOT Palindrome");
+    }
+
+    //PRIME NUMBER CHECK
+    public static void isPrime(int n) {
+        if (n <= 1) {
+            System.out.println(n + " is NOT Prime");
+            return;
+        }
+
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                System.out.println(n + " is NOT Prime");
+                return;
+            }
+        }
+
+        System.out.println(n + " is Prime");
     }
 
     public static void main(String[] args) {
