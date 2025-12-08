@@ -14,7 +14,7 @@ public class PracticeSheet08 {
         System.out.println("Total vowels = " + count);
     }
 
-    //SUM OF DIGITS OF A NUMBER
+    // SUM OF DIGITS OF A NUMBER
     public static void sumOfDigits(int n) {
         int sum = 0;
 
@@ -24,6 +24,22 @@ public class PracticeSheet08 {
         }
 
         System.out.println("Sum of digits = " + sum);
+    }
+
+    // FACTORIAL OF A NUMBER
+    public static void factorial(int n) {
+        if (n < 0) {
+            System.out.println("Factorial not possible for negative numbers");
+            return;
+        }
+
+        long fact = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+
+        System.out.println("Factorial of " + n + " = " + fact);
     }
 
     public static void main(String[] args) {
