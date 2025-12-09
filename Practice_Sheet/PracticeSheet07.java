@@ -235,36 +235,84 @@ public class PracticeSheet07 {
         System.out.println("Sum of arr[" + L + "..." + R + "] = " + sum);
     }
 
+    //Merge 2 Sorted Array
+    public static void merge2arr(int arr1[], int arr2[]){
+        //New Merge Array
+        int mergeArr[] = new int[arr1.length + arr2.length];
+
+        //intialize 3 pointers
+        int i = 0;
+        int j = 0;
+        int k = 0;
+
+        //traverse
+        while (i<arr1.length && j<arr2.length) {
+            //condition
+            if (arr1[i] < arr2[j]) {
+                //logic
+                mergeArr[k] = arr1[i];
+                i++;
+                k++;
+            } else {
+                mergeArr[k] = arr2[j];
+                j++;
+                k++;
+            }
+        }
+
+        // If arr2 finishes first → copy remaining elements of arr1
+        while (i < arr1.length) {
+            mergeArr[k] = arr1[i];
+            i++;
+            k++;
+        }
+
+        // If arr1 finishes first → copy remaining elements of arr2
+        while (j < arr2.length) {
+            mergeArr[k] = arr2[j];
+            j++;
+            k++;
+        }
+
+        //traverse - Print
+        System.out.println("Merge Array: ");
+        for(int l=0; l<mergeArr.length; l++){
+            System.out.println(mergeArr[l]);
+        }
+      
+    }
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr1 = {1, 3, 5};
+        int[] arr2 = {2, 4, 6};
+        merge2arr(arr1, arr2);
         // int k = 2;
         // int n = arr.length;
 
         // check if array is sorted
 
         // decalre and intialize
-        boolean isAscending = true;
-        boolean isDescending = true;
+        // boolean isAscending = true;
+        // boolean isDescending = true;
 
         // traverse - access every element
-        for (int i = 0; i < arr.length - 1; i++) {
-            // condition not desecnding
-            if (arr[i] < arr[i + 1]) {
-                isDescending = false;
-            } else if (arr[i] > arr[i + 1]) {
-                isAscending = false;
-            }
-        }
+        // for (int i = 0; i < arr.length - 1; i++) {
+        //     // condition not desecnding
+        //     if (arr[i] < arr[i + 1]) {
+        //         isDescending = false;
+        //     } else if (arr[i] > arr[i + 1]) {
+        //         isAscending = false;
+        //     }
+        // }
 
         // condition - print ascending & decending
-        if (isAscending) {
-            System.out.println("Array is sorted in Ascending order");
-            removeDublicate(arr);
-        } else if (isDescending) {
-            System.out.println("Array is sorted in Descending order");
-            removeDublicate(arr);
-        } else {
-            System.out.println("Array is not sorted means you can't remove dublicate elements");
-        }
+        // if (isAscending) {
+        //     System.out.println("Array is sorted in Ascending order");
+        //     removeDublicate(arr);
+        // } else if (isDescending) {
+        //     System.out.println("Array is sorted in Descending order");
+        //     removeDublicate(arr);
+        // } else {
+        //     System.out.println("Array is not sorted means you can't remove dublicate elements");
+        // }
     }
 }
