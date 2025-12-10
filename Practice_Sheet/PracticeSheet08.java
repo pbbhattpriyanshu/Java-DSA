@@ -76,6 +76,18 @@ public class PracticeSheet08 {
         System.out.println(n + " is Prime");
     }
 
+    //Count digits in a number
+    public static void countDigits(int n) {
+    int count = 0;
+
+    while (n > 0) {
+        count++;
+        n = n / 10;
+    }
+
+    System.out.println("Total digits = " + count);
+}
+
     public static void main(String[] args) {
 
     }
