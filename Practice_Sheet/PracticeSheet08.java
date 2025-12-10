@@ -59,7 +59,7 @@ public class PracticeSheet08 {
             System.out.println(original + " is NOT Palindrome");
     }
 
-    //PRIME NUMBER CHECK
+    // PRIME NUMBER CHECK
     public static void isPrime(int n) {
         if (n <= 1) {
             System.out.println(n + " is NOT Prime");
@@ -76,17 +76,17 @@ public class PracticeSheet08 {
         System.out.println(n + " is Prime");
     }
 
-    //Count digits in a number
+    // Count digits in a number
     public static void countDigits(int n) {
-    int count = 0;
+        int count = 0;
 
-    while (n > 0) {
-        count++;
-        n = n / 10;
+        while (n > 0) {
+            count++;
+            n = n / 10;
+        }
+
+        System.out.println("Total digits = " + count);
     }
-
-    System.out.println("Total digits = " + count);
-}
 
     public static void main(String[] args) {
 
