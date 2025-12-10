@@ -132,6 +132,12 @@ public class PracticeSheet08 {
         System.out.println("Total consonants = " + count);
     }
 
+    // Count words in a string
+    public static void countWords(String s) {
+        String[] parts = s.trim().split("\\s+");
+        System.out.println("Total words = " + parts.length);
+    }
+
     public static void main(String[] args) {
 
     }
