@@ -101,6 +101,19 @@ public class PracticeSheet08 {
         System.out.println("Reversed number = " + rev);
     }
 
+    // Count spaces in a string
+    public static void countSpaces(String s) {
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ' ') {
+                count++;
+            }
+        }
+
+        System.out.println("Total spaces = " + count);
+    }
+
     public static void main(String[] args) {
 
     }
