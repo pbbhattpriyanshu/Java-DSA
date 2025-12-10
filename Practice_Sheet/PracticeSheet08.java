@@ -88,6 +88,19 @@ public class PracticeSheet08 {
         System.out.println("Total digits = " + count);
     }
 
+    // Reverse a number
+    public static void reverseNumber(int n) {
+        int rev = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Reversed number = " + rev);
+    }
+
     public static void main(String[] args) {
 
     }
