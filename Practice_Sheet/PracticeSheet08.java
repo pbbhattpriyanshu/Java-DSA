@@ -114,6 +114,24 @@ public class PracticeSheet08 {
         System.out.println("Total spaces = " + count);
     }
 
+    // Count consonants in a string
+    public static void countConsonants(String s) {
+        s = s.toLowerCase();
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            if (ch >= 'a' && ch <= 'z') { // alphabet only
+                if (ch != 'a' && ch != 'e' && ch != 'i' && ch != 'o' && ch != 'u') {
+                    count++;
+                }
+            }
+        }
+
+        System.out.println("Total consonants = " + count);
+    }
+
     public static void main(String[] args) {
 
     }
