@@ -138,30 +138,6 @@ public class PracticeSheet08 {
         System.out.println("Total words = " + parts.length);
     }
 
-    // Find Largest Element in Array
-    public static void largestElement(int[] arr) {
-        int max = Integer.MIN_VALUE;
-
-        for (int x : arr) {
-            if (x > max)
-                max = x;
-        }
-
-        System.out.println("Largest element = " + max);
-    }
-
-    //Find Smallest Element in Array
-    public static void smallestElement(int[] arr) {
-    int min = Integer.MAX_VALUE;
-
-    for (int x : arr) {
-        if (x < min)
-            min = x;
-    }
-
-    System.out.println("Smallest element = " + min);
-}
-
     public static void main(String[] args) {
 
     }
