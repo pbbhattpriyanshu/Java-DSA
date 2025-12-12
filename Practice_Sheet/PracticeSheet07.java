@@ -281,6 +281,46 @@ public class PracticeSheet07 {
         }
       
     }
+
+    //Merge 2 Sorted Array with m & n elements without creating new array
+    public static void merge2Arrwith2Element(int arr1[], int arr2[], int m, int n){
+        //initalize
+        int i = m - 1;
+        int j = n -1;
+        int k = (n+m) - 1;
+
+        //logic
+        while (i>=0 && j>=0) {
+            if (arr1[i] < arr2[j]) {
+                arr1[k] = arr2[j];
+
+                j--;
+                k--;
+            } else {
+                arr1[k] = arr1[i];
+
+                i--;
+                k--;
+            }
+        }
+         while (i >= 0) {
+            arr1[k] = arr1[i];
+            i--;
+            k--;
+        }
+        
+        while (j >= 0) {
+            arr1[k] = arr2[j];
+            j--;
+            k--;
+        }
+
+        System.out.print("Merged Array: ");
+        for (int x = 0; x < arr1.length; x++) {
+            System.out.print(arr1[x] + " ");
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
         int[] arr1 = {1, 3, 5};
         int[] arr2 = {2, 4, 6};
