@@ -74,6 +74,23 @@ public class ConditionalSt {
         // }
         // System.out.println("Thank you, Please visit again");  
 
+        //Conditional Statements
+        // String country = "italy";
+
+        // if (country == "india") {
+        //     System.out.println("NAMASKAR");
+        // } else if (country == "france") {
+        //     System.out.println("Bonjour");
+        // } else if (country == "germany") {
+        //     System.out.println("Hallo!");
+        // } else if (country == "italy") {
+        //     System.out.println("Ciao!");
+        // } else if (country == "brazil") {
+        //     System.out.println("Olá!");
+        // } else {
+        //     System.out.println("Hello!");
+        // }
+
         // Switch Statement 
         // int number = 2;
         // switch (number) {
