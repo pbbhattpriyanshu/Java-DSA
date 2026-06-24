@@ -1,4 +1,3 @@
-import java.util.*;
 public class PracticeSheet01 {
     public static void main(String[] args) {
         //VARIABLES & DATA TYPES QUESTIONS

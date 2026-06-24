@@ -58,7 +58,7 @@ public class PracticeSheet02 {
 
         
 
-        // sc.close();
+        sc.close();
 
     }
     // public static void swapArr(int [] arr,int sp, int fp) {

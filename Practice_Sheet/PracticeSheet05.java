@@ -78,7 +78,7 @@ public class PracticeSheet05 {
         // Whether it contains “a” or not
 
         // A version where all spaces are replaced by underscores
-        System.out.println(full_Name.(" ", '_'));
+        //System.out.println(full_Name.(" ", '_'));
         sc.close();
     }
 }
