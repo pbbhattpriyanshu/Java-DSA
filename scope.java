@@ -10,7 +10,7 @@ public class scope {
         System.out.println(x + y); // Prints 3 + 43 = 46
 
         {
-            int z = 34; // z is declared inside this block and is only accessible here
+            //int z = 34; // z is declared inside this block and is only accessible here
     
         }
 

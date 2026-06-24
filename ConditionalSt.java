@@ -1,5 +1,4 @@
 // Lecture 7 - Conditional Statement in java
-import java.util.* ;
 public class ConditionalSt {
     public static void main(String[] args) {
         // if-else Statements

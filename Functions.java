@@ -1,5 +1,4 @@
 // Lecture 9 - Pattern in java
-import java.util.*;
 public class Functions {
 //     public static void calSum(int a, int b) {   // parameters or formal parameters
 //         int sum = a + b;

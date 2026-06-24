@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Str {
     public static void main(String[] args) {
         // String method and substring 
-        String name = "Piyush bhatt";
+        //String name = "Piyush bhatt";
         // char x = 'A';
         // if (x >= 90) {
         //     System.out.println("G");

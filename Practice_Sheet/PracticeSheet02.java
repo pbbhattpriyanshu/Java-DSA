@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PracticeSheet2 {
+public class PracticeSheet02 {
     public static void main(String[] args) {
         //Arrays
         Scanner sc = new Scanner(System.in);
