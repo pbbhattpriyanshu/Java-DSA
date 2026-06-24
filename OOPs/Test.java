@@ -24,8 +24,8 @@ class Employee {
     public String getAddress() {
         return Address;
     }
-    public void setName(String n) {
-        name = n;
+    public void setName(String name) {
+        this.name = name;
     }
     public void setSignature(String sign) {
         Signature = sign;
