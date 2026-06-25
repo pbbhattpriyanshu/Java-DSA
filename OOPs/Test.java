@@ -17,6 +17,11 @@ class Employee {
     private String Address = "Sector 62";
     private String Signature;
 
+    //Constructor
+    Employee(){
+        System.out.println("This is the information of Employee");
+    }
+
     //Methods - values = set & get
     public int getSalary() {
         return Salary;
