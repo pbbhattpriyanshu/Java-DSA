@@ -1,13 +1,3 @@
-//class calculator
-class calculator {
-    int num = 7;
-
-    public int add(int a, int b) {
-        System.out.println(num); // 7
-        return a + b;
-    }
-}
-
 // class Employee Id
 class Employee {
     int id = 1234;
@@ -18,7 +8,7 @@ class Employee {
     private String Signature;
     private String Degree;
     private Double CGPA;
-
+    String company = "Google";
     // Constructor
     Employee() {
         System.out.println("This is the information of Employee");
@@ -65,6 +55,9 @@ class Test {
         obj.setSignature("108PB");
         System.out.println(obj.name);
         System.out.println(obj.getSignature());
-        System.out.println(obj1.getDegree());
+        System.out.println(obj.company);
+        obj.company = "Microsoft";
+        System.out.println(obj.company); //Microsoft
+        System.out.println(obj1.company); //Google
     }
 }
