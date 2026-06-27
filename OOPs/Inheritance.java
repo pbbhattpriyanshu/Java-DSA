@@ -37,6 +37,28 @@ class advCalc extends Calc {
     }
 }
 
+//Super() - Keywords
+class A {
+    //Parameterized Constructor
+    A(String name){
+        System.out.println("in A class there is " + name);
+    }
+}
+
+class B extends A {
+    //No-Argument Constructor
+    B(){
+        super("Puish"); //super() - Argument
+        System.out.println("in B class");
+    }
+}
+
+class C extends B{
+    //No-Argument Constructor = super() - write optional, default java automatically write 
+    C(){
+        System.out.println("in C class");
+    }
+}
 public class Inheritance {
     public static void main(String[] args) {
         Calc obj1 = new Calc();
@@ -44,7 +66,9 @@ public class Inheritance {
         int ans = obj1.add(23, 45);
         int ans1 = obj2.add(23,44);
         
-        System.out.println(ans);
-        System.out.println(ans1);
+        //System.out.println(ans);
+        //System.out.println(ans1);
+
+        C obj3 = new C();
     }
 }
