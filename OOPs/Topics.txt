@@ -11,6 +11,8 @@ OOPs
 
 2. Inheritance
     #Super Keyword
+    #Method Overloading
+    #Method Overriding
     
 3. Polymorphism
 4. Abstraction
