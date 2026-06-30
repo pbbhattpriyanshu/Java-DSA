@@ -15,4 +15,7 @@ OOPs
     #Method Overriding
     
 3. Polymorphism
+    #Method Overloading (Compile-time Polymorphism)
+    #Method Overriding (Runtime Polymorphism)
+    #Dynamic Method Dispatch
 4. Abstraction
