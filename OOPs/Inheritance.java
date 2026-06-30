@@ -43,19 +43,28 @@ class A {
     A(String name){
         System.out.println("in A class there is " + name);
     }
+
+    A(){
+        System.out.println("in A class");
+    }
 }
 
 class B extends A {
     //No-Argument Constructor
     B(){
-        super("Puish"); //super() - Argument
+        //super("Puish"); //super() - Argument
         System.out.println("in B class");
+    }
+    B(int age){
+        this(); //this class -> constructor call = "in B class"
+        System.out.println("my age is " + age);
     }
 }
 
 class C extends B{
     //No-Argument Constructor = super() - write optional, default java automatically write 
     C(){
+        super(21);
         System.out.println("in C class");
     }
 }

@@ -10,7 +10,7 @@ OOPs
     #Static Keyword
 
 2. Inheritance
-    #Super Keyword
+    #Super Keyword - call Constructor of super Class
     #Method Overloading
     #Method Overriding
     
