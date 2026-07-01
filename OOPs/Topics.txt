@@ -19,4 +19,13 @@ OOPs
     #Method Overriding (Runtime Polymorphism)
     #Dynamic Method Dispatch
     #Final Keyword
+    #58 Object Class equals toString hashcode in Java
+    #59 Upcasting and Downcasting in Java
+    #60 Wrapper Class in Java
+
 4. Abstraction
+    #abstract Keyword
+    #62 Inner Class in Java
+    #63 Anonymous Inner Class in Java
+    #64 Abstract and Anonymous Inner Class
+    https://youtube.com/playlist?list=PLsyeobzWxl7oa1WO9n4cP3OY9nOtUcZIg&si=Rzy-frVBJ_Zgi1QI
